@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="620.0" prefWidth="1000.0" stylesheets="@administrator_home.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.AdministratorHomeController">
+   <children>
+      <AnchorPane maxHeight="51.0" maxWidth="1000.0" prefHeight="51.0" prefWidth="1000.0" stylesheets="@student_grades.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4f4f4f" height="51.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="1000.0" />
+            <Text id="MyGrades" fill="WHITE" layoutX="470.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" wrappingWidth="60.53704833984375" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="51.0" prefHeight="569.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+         <children>
+            <SplitPane fx:id="splitPane" dividerPositions="0.1458890374331551" layoutX="-6.0" prefHeight="569.0" prefWidth="1000.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <VBox id="side" layoutX="70.0" layoutY="65.0" prefHeight="567.0" prefWidth="495.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Rectangle id="side" arcHeight="5.0" arcWidth="5.0" fill="#efefef" height="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="144.0" />
+                              <MFXButton id="toStudentInformation" prefHeight="47.0" prefWidth="146.0" rippleColor="#dd768e" text="Student Information" fx:id="toStudentInformation" onMouseClicked="#ToStudentInformation"/>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#efefef" height="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="143.0" />
+                              <MFXButton id="toStudentInformation" prefHeight="47.0" prefWidth="146.0" rippleColor="#dd768e" text="Courese Management" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="408.0" prefWidth="415.0">
+                     <children>
+                        <AnchorPane id="side" layoutX="68.0" layoutY="47.0" prefHeight="131.0" prefWidth="282.0">
+                           <children>
+                              <Label layoutX="141.0" layoutY="29.0" text="Number of  Courses" />
+                              <Label layoutX="193.0" layoutY="73.0" text="3" />
+                              <ImageView fitHeight="78.0" fitWidth="82.0" layoutX="26.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/book.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane id="side" layoutX="502.0" layoutY="47.0" prefHeight="131.0" prefWidth="282.0">
+                           <children>
+                              <Label layoutX="141.0" layoutY="29.0" text="Number of students" />
+                              <Label layoutX="198.0" layoutY="79.0" text="2" />
+                              <ImageView fitHeight="78.0" fitWidth="82.0" layoutX="30.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/friends.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <BarChart layoutX="136.0" layoutY="212.0" prefHeight="321.0" prefWidth="579.0" title="Information Review">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis minorTickCount="20" side="LEFT" upperBound="240.0" />
+                          </yAxis>
+                        </BarChart>
+                     </children></AnchorPane>
+              </items>
+            </SplitPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
