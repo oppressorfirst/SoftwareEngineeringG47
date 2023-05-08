@@ -80,7 +80,7 @@ public class AdministratorInformationController implements Initializable{
         //studentData[0][0] = "Art";
         //studentData[0][1] = "100";
 
-        String csvFilePath = "./UI/src/main/Student_info.csv";
+        String csvFilePath = "./APP/src/main/Student_info.csv";
         List<Info> infoList = CSVtoList1(csvFilePath);
 
         //List<Grade> grades = parseGrades(studentData);
