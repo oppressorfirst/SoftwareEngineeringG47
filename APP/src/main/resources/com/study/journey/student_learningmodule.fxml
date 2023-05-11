@@ -14,13 +14,13 @@
       <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="51.0" prefWidth="600.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4d79eb" height="51.0" stroke="WHITE" strokeType="INSIDE" width="1000.0" />
-            <ImageView onMouseClicked="#changePage" fitHeight="37.0" fitWidth="44.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" y="1.0">
+            <ImageView fitHeight="37.0" fitWidth="44.0" layoutX="14.0" layoutY="7.0" onMouseClicked="#changePage" pickOnBounds="true" preserveRatio="true" y="1.0">
                <image>
                   <Image url="@image/back.png" />
                </image>
             </ImageView>
-            <Text id="learningModules" fill="WHITE" layoutX="401.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Learning Modules" wrappingWidth="175.87039184570312" />
-            <MFXButton id="backHome" fx:id="backHome" onMouseClicked="#changePage" layoutX="51.0" layoutY="8.0" prefHeight="27.0" prefWidth="83.0" text="Home" />
+            <Text id="learningModules" fill="WHITE" layoutX="399.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Learning Modules" wrappingWidth="234.27041625976562" />
+            <MFXButton id="backHome" fx:id="backHome" layoutX="51.0" layoutY="8.0" onMouseClicked="#changePage" prefHeight="27.0" prefWidth="83.0" text="Home" />
          </children>
       </AnchorPane>
       <AnchorPane id="subject1" layoutX="60.0" layoutY="104.0" prefHeight="178.0" prefWidth="217.0">

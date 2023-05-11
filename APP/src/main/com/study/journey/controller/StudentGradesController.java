@@ -1,7 +1,6 @@
 package com.study.journey.controller;
 
-import UI_Function.FileIO;
-import com.study.journey.model.Grade;
+import com.study.journey.entity.Grade;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import io.github.palexdev.materialfx.controls.MFXTableColumn;
 import io.github.palexdev.materialfx.controls.MFXTableView;
@@ -91,7 +90,7 @@ public class StudentGradesController implements Initializable {
         //studentData[0][0] = "Art";
         //studentData[0][1] = "100";
 
-        String csvFilePath = "./APP/src/main/CourseScore.csv";
+        String csvFilePath = "./src/main/CourseScore.csv";
         List<Grade> gradesList = CSVtoList(csvFilePath);
         for (Grade grade : gradesList) {
             System.out.println(grade.getName() + " " + grade.getStatus() + " " + grade.getCredit() + " " + grade.getGrade());

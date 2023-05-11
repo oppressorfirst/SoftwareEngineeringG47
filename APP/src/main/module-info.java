@@ -9,5 +9,5 @@ module com.example.demo {
     exports com.study.journey;
     exports com.study.journey.controller;
     opens com.study.journey.controller to javafx.fxml;
-    exports com.study.journey.model;
+    exports com.study.journey.entity;
 }
