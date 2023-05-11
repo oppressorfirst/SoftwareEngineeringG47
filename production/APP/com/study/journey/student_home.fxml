@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="620.0" maxWidth="1000.0" minHeight="620.0" minWidth="1000.0" prefHeight="620.0" prefWidth="1000.0" stylesheets="@student_home.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.StudentHomeController">
+   <children>
+      <AnchorPane prefHeight="49.0" prefWidth="995.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4d79eb" height="40.0" stroke="WHITE" strokeType="INSIDE" width="995.0" />
+            <ImageView id="" fitHeight="34.0" fitWidth="30.0" layoutX="7.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@image/home.png" />
+            </ImageView>
+            <Text id="homeTopic" fill="WHITE" layoutX="463.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" wrappingWidth="69.8704223632813" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="aboutMe" layoutX="14.0" layoutY="49.0" prefHeight="279.0" prefWidth="249.0">
+         <children>
+            <AnchorPane id="myImageView" layoutX="63.0" layoutY="12.0" prefHeight="120.0" prefWidth="120.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.6" height="165.0" radius="82.0" width="165.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></AnchorPane>
+            <Text layoutX="17.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name " wrappingWidth="92.53707885742188" />
+            <Text layoutX="34.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID" wrappingWidth="69.87042236328125" />
+            <Text layoutX="17.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Class" wrappingWidth="92.53707885742188" />
+            <Text layoutX="129.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yang RUI zhi" wrappingWidth="106.537109375" />
+            <Text layoutX="125.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20202213329" wrappingWidth="99.20379638671864" />
+            <Text layoutX="129.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2020215110" wrappingWidth="92.53707885742188" />
+         </children></AnchorPane>
+      <AnchorPane id="learningPart" layoutX="277.0" layoutY="49.0" prefHeight="240.0" prefWidth="720.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" width="720.0" />
+            <ImageView fitHeight="27.0" fitWidth="30.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" y="1.0">
+               <image>
+                  <Image url="@image/circle.png" />
+               </image></ImageView>
+            <Text id="learningTopic" fill="WHITE" layoutX="42.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Learning Overview" wrappingWidth="255.87039184570312" />
+            <AnchorPane layoutY="39.0" prefHeight="240.0" prefWidth="243.0">
+               <children>
+                  <Text id="learningTopic" layoutX="19.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Courses" wrappingWidth="203.20370483398438" />
+                  <Text id="learningTopic" layoutX="116.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="9.999999999999545" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="245.0" layoutY="39.0" prefHeight="240.0" prefWidth="243.0">
+               <children>
+                  <Text id="learningTopic" layoutX="20.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Completed" wrappingWidth="203.20370483398438" />
+                  <Text id="learningTopic" layoutX="112.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="9.999999999999773" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="476.0" layoutY="39.0" prefHeight="240.0" prefWidth="243.0">
+               <children>
+                  <Text id="learningTopic" layoutX="25.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses in Progress" wrappingWidth="189.87045288085938" />
+                  <Text id="learningTopic" layoutX="110.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="9.999999999999773" />
+               </children>
+            </AnchorPane>
+            <Separator layoutX="240.0" layoutY="39.0" orientation="VERTICAL" prefHeight="240.0" prefWidth="10.0" />
+            <Separator layoutX="468.0" layoutY="39.0" orientation="VERTICAL" prefHeight="240.0" prefWidth="30.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="menuPart" layoutX="2.0" layoutY="340.0" prefHeight="279.0" prefWidth="995.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" width="995.0" />
+            <ImageView fitHeight="27.0" fitWidth="30.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" y="1.0">
+               <image>
+                  <Image url="@image/circle.png" />
+               </image>
+            </ImageView>
+            <Text id="learningTopic" fill="WHITE" layoutX="42.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu" wrappingWidth="255.87039184570312" />
+            <AnchorPane id="learningModule" layoutX="44.0" layoutY="62.0" onMouseClicked="#toLearning" prefHeight="85.0" prefWidth="145.0">
+               <children>
+                  <ImageView fitHeight="77.0" fitWidth="85.0" layoutX="34.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/app.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane id="grades" layoutX="298.0" layoutY="62.0" prefHeight="85.0" prefWidth="155.0" onMouseClicked="#toGrades">
+               <children>
+                  <ImageView fitHeight="85.0" fitWidth="136.0" layoutX="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/grades.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane id="email" layoutX="537.0" layoutY="62.0" prefHeight="85.0" prefWidth="155.0">
+               <children>
+                  <ImageView fitHeight="85.0" fitWidth="136.0" layoutX="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/email.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane id="literatureIndex" layoutX="782.0" layoutY="62.0" prefHeight="85.0" prefWidth="145.0">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="70.0" layoutX="43.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/index.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <MFXButton fx:id="toLearning" layoutX="61.0" layoutY="171.0" onMouseClicked = "#toLearning" text="Learning module" />
+            <MFXButton fx:id="toGrades" layoutX="347.0" layoutY="171.0" onMouseClicked = "#toGrades" text="Grades" />
+            <MFXButton fx:id="toEmail" layoutX="591.0" layoutY="171.0"  text="Email" />
+            <MFXButton fx:id="toIndex" layoutX="802.0" layoutY="171.0"  text="Literature Index" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

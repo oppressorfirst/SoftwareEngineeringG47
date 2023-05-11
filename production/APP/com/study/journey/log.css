@@ -1,0 +1,31 @@
+#box {
+    -fx-background-image: url("image/background.png");
+    -fx-background-size: cover;
+}
+#surface{
+    -fx-background-color: white;
+    -fx-background-radius: 45px;
+}
+MFXCheckbox {
+    -fx-font-size: 13px;
+}
+#toHome {
+    -fx-font-size: 30px;
+    -fx-background-color: rgb(77,121,235);
+    -fx-text-fill: white;
+    -fx-font-family: Consolas;
+}
+MFXTextField {
+    -fx-font-size: 15px;
+}
+MFXPasswordField {
+    -fx-font-size: 15px;
+}
+Label {
+    -fx-font-family: Impact;
+    -fx-font-size: 25px;
+}
+/*#forgot {*/
+/*    -fx-font-size: 15px;*/
+/*}*/
+

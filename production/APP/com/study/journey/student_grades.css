@@ -1,0 +1,9 @@
+#MyGrades{
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+#backHome{
+    -fx-font-size: 20px;
+    -fx-text-fill: black;
+    -fx-font-family: Consolas;
+}
