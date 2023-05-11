@@ -1,4 +1,4 @@
-package com.study.journey.model;
+package com.study.journey.entity;
 
 public class Info {
     private final String ID;

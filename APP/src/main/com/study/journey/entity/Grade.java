@@ -1,10 +1,13 @@
-package com.study.journey.model;
+package com.study.journey.entity;
 
 public class Grade {
     private final String name;
     private String status;
     private int credit;
     private String grade;
+
+    protected  String adc;
+
 
 
     public Grade(String name, String status, int credit, String grade) {
@@ -28,6 +31,7 @@ public class Grade {
 
 
     public String getName() {
+
         return name;
     }
 

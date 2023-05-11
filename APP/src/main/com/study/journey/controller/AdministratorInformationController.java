@@ -1,20 +1,14 @@
 package com.study.journey.controller;
 
-import UI_Function.FileIO;
-import com.study.journey.model.Grade;
-import com.study.journey.model.Info;
+import com.study.journey.entity.Info;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import io.github.palexdev.materialfx.controls.MFXTableColumn;
 import io.github.palexdev.materialfx.controls.MFXTableView;
 import io.github.palexdev.materialfx.controls.cell.MFXTableRowCell;
-import io.github.palexdev.materialfx.filter.IntegerFilter;
 import io.github.palexdev.materialfx.filter.StringFilter;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
-import io.github.palexdev.materialfx.controls.MFXButton;
-import io.github.palexdev.materialfx.controls.MFXTableView;
-import javafx.fxml.FXML;
 
 
 import java.io.BufferedReader;
@@ -25,7 +19,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.ResourceBundle;
-import java.io.IOException;
 
 public class AdministratorInformationController implements Initializable{
     public MFXButton toAdministratorHome;
