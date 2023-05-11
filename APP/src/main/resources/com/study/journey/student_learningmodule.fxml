@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import io.github.palexdev.materialfx.controls.MFXButton?>
-<?import io.github.palexdev.materialfx.controls.MFXProgressSpinner?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Text?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="studentGrades" maxHeight="620.0" maxWidth="1000.0" minHeight="620.0" minWidth="1000.0" prefHeight="620.0" prefWidth="1000.0" stylesheets="@student_learningmodule.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.StudentLearningModuleController">
+<AnchorPane id="studentGrades" maxHeight="620.0" maxWidth="1000.0" minHeight="620.0" minWidth="1000.0" prefHeight="620.0" prefWidth="1000.0" stylesheets="@student_learningmodule.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.StudentLearningModuleController">
    <children>
       <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="51.0" prefWidth="600.0">
          <children>
@@ -51,6 +49,6 @@
          </children>
       </AnchorPane>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="68.0" layoutX="391.0" layoutY="510.0" stroke="BLACK" strokeType="INSIDE" width="218.0" />
-      <Text layoutX="417.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In Progress: 1    Completed: 2" wrappingWidth="165.87039184570312" />
+      <Text layoutX="414.0" layoutY="548.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In Progress: 1    Completed: 2" wrappingWidth="186.87039184570312" />
    </children>
 </AnchorPane>

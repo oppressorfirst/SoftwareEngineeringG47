@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import io.github.palexdev.materialfx.controls.MFXButton?>
-<?import javafx.scene.control.Separator?>
-<?import javafx.scene.effect.InnerShadow?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Text?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="620.0" maxWidth="1000.0" minHeight="620.0" minWidth="1000.0" prefHeight="620.0" prefWidth="1000.0" stylesheets="@student_home.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.StudentHomeController">
+<AnchorPane maxHeight="620.0" maxWidth="1000.0" minHeight="620.0" minWidth="1000.0" prefHeight="620.0" prefWidth="1000.0" stylesheets="@student_home.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.StudentHomeController">
    <children>
       <AnchorPane prefHeight="49.0" prefWidth="995.0">
          <children>
@@ -58,9 +57,9 @@
                   <Text id="learningTopic" layoutX="112.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="9.999999999999773" />
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="476.0" layoutY="39.0" prefHeight="240.0" prefWidth="243.0">
+            <AnchorPane layoutX="468.0" layoutY="39.0" prefHeight="240.0" prefWidth="243.0">
                <children>
-                  <Text id="learningTopic" layoutX="25.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses in Progress" wrappingWidth="189.87045288085938" />
+                  <Text id="learningTopic" layoutX="20.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses in Progress" wrappingWidth="229.87045288085938" />
                   <Text id="learningTopic" layoutX="110.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="9.999999999999773" />
                </children>
             </AnchorPane>
@@ -85,7 +84,7 @@
                      </image>
                   </ImageView>
                </children></AnchorPane>
-            <AnchorPane id="grades" layoutX="298.0" layoutY="62.0" prefHeight="85.0" prefWidth="155.0" onMouseClicked="#toGrades">
+            <AnchorPane id="grades" layoutX="298.0" layoutY="62.0" onMouseClicked="#toGrades" prefHeight="85.0" prefWidth="155.0">
                <children>
                   <ImageView fitHeight="85.0" fitWidth="136.0" layoutX="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -109,10 +108,10 @@
                      </image>
                   </ImageView>
                </children></AnchorPane>
-            <MFXButton fx:id="toLearning" layoutX="61.0" layoutY="171.0" onMouseClicked = "#toLearning" text="Learning module" />
-            <MFXButton fx:id="toGrades" layoutX="347.0" layoutY="171.0" onMouseClicked = "#toGrades" text="Grades" />
-            <MFXButton fx:id="toEmail" layoutX="591.0" layoutY="171.0"  text="Email" />
-            <MFXButton fx:id="toIndex" layoutX="802.0" layoutY="171.0"  text="Literature Index" />
+            <MFXButton fx:id="toLearning" layoutX="61.0" layoutY="171.0" onMouseClicked="#toLearning" text="Learning module" />
+            <MFXButton fx:id="toGrades" layoutX="347.0" layoutY="171.0" onMouseClicked="#toGrades" text="Grades" />
+            <MFXButton fx:id="toEmail" layoutX="591.0" layoutY="171.0" text="Email" />
+            <MFXButton fx:id="toIndex" layoutX="802.0" layoutY="171.0" text="Literature Index" />
          </children>
       </AnchorPane>
    </children>
