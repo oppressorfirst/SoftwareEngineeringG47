@@ -24,6 +24,7 @@ public class StudentHomeController {
     public Text StudentName;
     public Text StudentID;
     public Text StudentClass;
+    public LoginController loginController;
     Boolean temp = true; // 防止多次点击
 
     @FXML
@@ -47,6 +48,7 @@ public class StudentHomeController {
             PageController controller = new PageController();
             controller.changePage(toLearning);
             temp = false;
+            System.out.println(loginController.info);
         }
     }
 

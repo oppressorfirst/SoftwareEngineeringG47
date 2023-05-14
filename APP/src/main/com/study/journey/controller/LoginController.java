@@ -19,10 +19,11 @@ public class LoginController {
     private MFXButton toHome;
 
     @FXML
-    private MFXTextField userName;
+    public MFXTextField userName;
     @FXML
     private MFXTextField passWord;
     boolean rejectDoubleCheck = true;
+
 
     public Info info;
 
