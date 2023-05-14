@@ -25,11 +25,21 @@ public class StudentHomeController {
     public Text StudentID;
     public Text StudentClass;
     Boolean temp = true; // 防止多次点击
+
     @FXML
     public void initialize() {
         updateLearningTopicText();
         updatePersonInfoText();
     }
+
+    //创建一个方法给别的controller类用来传参
+    private Info info;
+
+    public void setInfo(Info info) {
+        this.info = info;
+    }
+        // 其他代码
+
 
     @FXML
     private void toLearning(MouseEvent event) throws IOException {
@@ -49,7 +59,7 @@ public class StudentHomeController {
         }
     }
 
-    public void updatePersonInfoText() {
+    public Info getInfoFromCsvByID() { // 这个方法根据 ID 返回一个特定的学生信息
 
         String csvFilePath = "./APP/src/main/Student_info.csv";
         ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
@@ -63,6 +73,12 @@ public class StudentHomeController {
                 info = element; // 找到匹配的元素
             }
         }
+
+        return info;
+    }
+
+    public void updatePersonInfoText() {
+        Info info = getInfoFromCsvByID();
 
         StudentName.setText(String.format("%s", info.getName()));
         StudentID.setText(String.format("%s", info.getID()));

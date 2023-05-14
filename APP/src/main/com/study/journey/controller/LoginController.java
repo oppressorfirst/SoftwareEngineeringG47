@@ -24,11 +24,10 @@ public class LoginController {
     private MFXTextField passWord;
     boolean rejectDoubleCheck = true;
 
+    public Info info;
 
 
-    // 用于判断用户是否有权利登录 （nicolas Yang）
-    private int validLogin(String username, String password){
-
+    public Info getInfoFromCsvByName() { // 这个方法根据 Name 返回一个特定的学生信息
         String csvFilePath = "./APP/src/main/Student_info.csv";
         ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
 
@@ -41,9 +40,17 @@ public class LoginController {
                 info = element; // 找到匹配的元素
             }
         }
+
+        return info;
+    }
+
+    // 用于判断用户是否有权利登录 （nicolas Yang）
+    private int validLogin(String username, String password){
+
+
         // 预定义的用户名和密码,之后删，并换成csv.文件的形式（nicolas）
-        String validUsername_stu = info.getName();
-        String validPassword_stu = info.getPIN();
+        String validUsername_stu = this.info.getName();
+        String validPassword_stu = this.info.getPIN();
         String validUsername_adm = "tom";
         String validPassword_adm = "1234567";
         // 真正的判断函数
@@ -87,6 +94,7 @@ public class LoginController {
             String password;
             username = userName.getText();
             password = passWord.getText();
+            this.info = getInfoFromCsvByName();
 
             PageController controller = new PageController();
             switch (validLogin(username, password)) { // 开始匹配
