@@ -137,6 +137,14 @@ public class PageController {
         assert Path != null;
         FXMLLoader root = new FXMLLoader(Main.class.getResource(Path));
         Scene scene = new Scene(root.load(),1000, 620);
+
+        if(Path.equals("student_home.fxml") && GoNum==1){
+            StudentHomeController studentHomeController  = root.getController();
+            FXMLLoader logLoader = (FXMLLoader) Btu.getScene().getProperties().get("FXMLLOADER");
+            studentHomeController.loginController = logLoader.getController();
+            System.out.println(studentHomeController.loginController);
+        }
+
         scene.getStylesheets().add(Objects.requireNonNull(Main.class.getResource(cssPath)).toExternalForm());
         Timeline timeline = new Timeline();
         KeyFrame keyFrame = new KeyFrame(Duration.millis(500), event -> {

@@ -1,5 +1,6 @@
 package com.study.journey;
 
+import com.study.journey.controller.LoginController;
 import io.github.palexdev.materialfx.css.themes.MFXThemeManager;
 import io.github.palexdev.materialfx.css.themes.Themes;
 import javafx.application.Application;
@@ -17,6 +18,7 @@ public class Main extends Application {
 
         FXMLLoader logPage = new FXMLLoader(Main.class.getResource("log.fxml"));
         Scene logScene = new Scene(logPage.load(), 1000, 620);
+        logScene.getProperties().put("FXMLLOADER", logPage);
         stage.setResizable(false);
         MFXThemeManager.addOn(logScene, Themes.DEFAULT, Themes.LEGACY);
         logScene.getStylesheets().add(Objects.requireNonNull(Main.class.getResource("log.css")).toExternalForm());
@@ -27,6 +29,5 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch();
-
     }
 }

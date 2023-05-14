@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import io.github.palexdev.materialfx.controls.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="620.0" maxWidth="1000.0" minHeight="620.0" minWidth="1000.0" prefHeight="620.0" prefWidth="1000.0" stylesheets="@student_home.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.StudentHomeController">
+<AnchorPane maxHeight="620.0" maxWidth="1000.0" minHeight="620.0" minWidth="1000.0" prefHeight="620.0" prefWidth="1000.0" stylesheets="@student_home.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.StudentHomeController">
    <children>
       <AnchorPane prefHeight="49.0" prefWidth="995.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4d79eb" height="40.0" stroke="WHITE" strokeType="INSIDE" width="995.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4d79eb" height="40.0" layoutX="-12.0" stroke="WHITE" strokeType="INSIDE" width="1054.0" />
             <ImageView id="" fitHeight="34.0" fitWidth="30.0" layoutX="7.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                <Image url="@image/home.png" />
             </ImageView>
             <Text id="homeTopic" fill="WHITE" layoutX="463.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" wrappingWidth="69.8704223632813" />
+            <MFXButton layoutX="921.0" layoutY="12.0" />
          </children>
       </AnchorPane>
       <AnchorPane id="aboutMe" layoutX="14.0" layoutY="49.0" prefHeight="279.0" prefWidth="249.0">
@@ -33,13 +35,13 @@
             <Text layoutX="17.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name " wrappingWidth="92.53707885742188" />
             <Text layoutX="34.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID" wrappingWidth="69.87042236328125" />
             <Text layoutX="17.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Class" wrappingWidth="92.53707885742188" />
-            <Text fx:id = "StudentName" layoutX="129.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StudentName" wrappingWidth="106.537109375" />
-            <Text fx:id = "StudentID" layoutX="125.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StudentID" wrappingWidth="99.20379638671864" />
-            <Text fx:id = "StudentClass" layoutX="129.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StudentClass" wrappingWidth="92.53707885742188" />
+            <Text fx:id="StudentName" layoutX="129.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StudentName" wrappingWidth="106.537109375" />
+            <Text fx:id="StudentID" layoutX="125.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StudentID" wrappingWidth="99.20379638671864" />
+            <Text fx:id="StudentClass" layoutX="129.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StudentClass" wrappingWidth="92.53707885742188" />
          </children></AnchorPane>
       <AnchorPane id="learningPart" layoutX="277.0" layoutY="49.0" prefHeight="240.0" prefWidth="720.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" width="720.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" width="739.0" />
             <ImageView fitHeight="27.0" fitWidth="30.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" y="1.0">
                <image>
                   <Image url="@image/circle.png" />
@@ -69,7 +71,7 @@
       </AnchorPane>
       <AnchorPane id="menuPart" layoutX="2.0" layoutY="340.0" prefHeight="279.0" prefWidth="995.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" width="995.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="-29.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" width="1057.0" />
             <ImageView fitHeight="27.0" fitWidth="30.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" y="1.0">
                <image>
                   <Image url="@image/circle.png" />
