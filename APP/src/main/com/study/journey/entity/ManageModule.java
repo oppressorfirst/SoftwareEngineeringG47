@@ -29,8 +29,8 @@ public class ManageModule extends  Module{
         this.student_list = student_list;
     }
 
-    public void add_student(String ID, String PIN,String age, String sex,String name){
-        student_list.add(new Student(ID,PIN,age,sex,name));
+    public void add_student(String ID, String classID, String PIN, String age, String sex,String name){
+        student_list.add(new Student(ID,classID, PIN, age, sex, name));
     }
 
     public void remove_student(int index){

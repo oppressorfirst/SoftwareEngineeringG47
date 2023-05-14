@@ -26,8 +26,8 @@ public class Administrator extends User{
         this.modules = modules;
     }
 
-    public void addstudent(String ID, String PIN, String age, String sex, String name){
-        students.add(new Student(ID, PIN, age, sex, name));
+    public void addstudent(String ID, String classID, String PIN, String age, String sex, String name){
+        students.add(new Student(ID, classID, PIN, age, sex, name));
     }
     public void removestudent(int index){
         students.remove(index);

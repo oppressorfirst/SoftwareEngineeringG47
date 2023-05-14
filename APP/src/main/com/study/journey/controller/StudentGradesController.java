@@ -37,8 +37,8 @@ public class StudentGradesController implements Initializable {
         }
     }
 
-    public static List<Grade> parseGrades(String[][] studentData) {
-        List<Grade> grades = new ArrayList<>();
+    public static ArrayList<Grade> parseGrades(String[][] studentData) {
+        ArrayList<Grade> grades = new ArrayList<>();
         for (int i = 0; i < studentData.length; i++) {
             String name = studentData[i][0];
             String grade = studentData[i][1];
@@ -52,8 +52,8 @@ public class StudentGradesController implements Initializable {
     }
 
 
-    public static List<Grade> CSVtoList(String csvFilePath) {
-        List<Grade> gradesList = new ArrayList<>();
+    public static ArrayList<Grade> CSVtoList(String csvFilePath) {
+        ArrayList<Grade> grades = new ArrayList<>();
         String csvSplitBy = ",";
         String line;
 
@@ -70,13 +70,13 @@ public class StudentGradesController implements Initializable {
                 String grade = values[3].trim();
 
                 Grade gradeObj = new Grade(name, status, credit, grade);
-                gradesList.add(gradeObj);
+                grades.add(gradeObj);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return gradesList;
+        return grades;
     }
 
 
@@ -91,13 +91,13 @@ public class StudentGradesController implements Initializable {
         //studentData[0][1] = "100";
 
         String csvFilePath = "./APP/src/main/CourseScore.csv";
-        List<Grade> gradesList = CSVtoList(csvFilePath);
-        for (Grade grade : gradesList) {
+        ArrayList<Grade> grades = CSVtoList(csvFilePath);
+        for (Grade grade : grades) {
             System.out.println(grade.getName() + " " + grade.getStatus() + " " + grade.getCredit() + " " + grade.getGrade());
         }
 
         //List<Grade> grades = parseGrades(studentData);
-        table.getItems().addAll(gradesList);
+        table.getItems().addAll(grades);
 
         setupTable();
 
