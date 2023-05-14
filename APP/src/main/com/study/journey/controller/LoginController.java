@@ -1,5 +1,6 @@
 package com.study.journey.controller;
 
+import com.study.journey.entity.Info;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import io.github.palexdev.materialfx.controls.MFXRadioButton;
 import io.github.palexdev.materialfx.controls.MFXTextField;
@@ -7,6 +8,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ToggleGroup;
 
 import java.io.IOException;
+import java.util.ArrayList;
+
+import static com.study.journey.controller.AdministratorInformationController.CSVtoList1;
 
 public class LoginController {
     public MFXRadioButton AdminRadioBtu;
@@ -18,15 +22,28 @@ public class LoginController {
     private MFXTextField userName;
     @FXML
     private MFXTextField passWord;
-    Boolean rejectDoubleCheck = true; // 防止多次点击,这里被杨哥修改了，因为他表示尊重并祝福
+    boolean rejectDoubleCheck = true;
 
 
 
     // 用于判断用户是否有权利登录 （nicolas Yang）
     private int validLogin(String username, String password){
+
+        String csvFilePath = "./APP/src/main/Student_info.csv";
+        ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
+
+        String name = userName.getText(); // 要搜索的特定名字值
+        Info info = null;
+
+
+        for (Info element : infos) {
+            if (element.getName().equals(name)) { // 根据特定值进行匹配
+                info = element; // 找到匹配的元素
+            }
+        }
         // 预定义的用户名和密码,之后删，并换成csv.文件的形式（nicolas）
-        String validUsername_stu = "nicolas";
-        String validPassword_stu = "123456";
+        String validUsername_stu = info.getName();
+        String validPassword_stu = info.getPIN();
         String validUsername_adm = "tom";
         String validPassword_adm = "1234567";
         // 真正的判断函数
@@ -82,7 +99,7 @@ public class LoginController {
                     break;
                 case 3:
                     /* exit(Stage stage);*/
-                    System.out.println("用户名或密码不正确");
+                    System.out.println("用户名密码不匹配或用户不存在");
                     break;
                 case 4:
                     System.out.println("请选择是要adm还是stu");

@@ -33,9 +33,9 @@
             <Text layoutX="17.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name " wrappingWidth="92.53707885742188" />
             <Text layoutX="34.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID" wrappingWidth="69.87042236328125" />
             <Text layoutX="17.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Class" wrappingWidth="92.53707885742188" />
-            <Text layoutX="129.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yang RUI zhi" wrappingWidth="106.537109375" />
-            <Text layoutX="125.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20202213329" wrappingWidth="99.20379638671864" />
-            <Text layoutX="129.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2020215110" wrappingWidth="92.53707885742188" />
+            <Text fx:id = "StudentName" layoutX="129.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StudentName" wrappingWidth="106.537109375" />
+            <Text fx:id = "StudentID" layoutX="125.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StudentID" wrappingWidth="99.20379638671864" />
+            <Text fx:id = "StudentClass" layoutX="129.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StudentClass" wrappingWidth="92.53707885742188" />
          </children></AnchorPane>
       <AnchorPane id="learningPart" layoutX="277.0" layoutY="49.0" prefHeight="240.0" prefWidth="720.0">
          <children>
@@ -48,7 +48,7 @@
             <AnchorPane layoutY="39.0" prefHeight="240.0" prefWidth="243.0">
                <children>
                   <Text id="learningTopic" layoutX="19.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Courses" wrappingWidth="203.20370483398438" />
-                  <Text id="learningTopic" layoutX="116.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="9.999999999999545" />
+                  <Text fx:id="learningTopic" layoutX="116.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="9.999999999999545" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="245.0" layoutY="39.0" prefHeight="240.0" prefWidth="243.0">

@@ -36,9 +36,9 @@ public class AdministratorInformationController implements Initializable{
 
     }
 
-    //妈的直接把文件写成List吧，不用数组了，烦死了！！！
-    public static List<Info> CSVtoList1(String csvFilePath) {
-        List<Info> infoList = new ArrayList<>();
+
+    public static ArrayList<Info> CSVtoList1(String csvFilePath) {
+        ArrayList<Info> infos = new ArrayList<>();
         String csvSplitBy = ",";
         String line;
 
@@ -50,17 +50,18 @@ public class AdministratorInformationController implements Initializable{
 
                 //String.trim()可以吧数据间的空格去掉
                 String ID = values[0].trim();
-                String name = values[1].trim();
-                String PIN = values[2].trim();
+                String classID = values[1].trim();
+                String name = values[2].trim();
+                String PIN = values[3].trim();
 
-                Info infoObj = new Info(ID, name, PIN);
-                infoList.add(infoObj);
+                Info infoObj = new Info(ID, classID, name, PIN);
+                infos.add(infoObj);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return infoList;
+        return infos;
     }
 
 
@@ -74,10 +75,10 @@ public class AdministratorInformationController implements Initializable{
         //studentData[0][1] = "100";
 
         String csvFilePath = "./APP/src/main/Student_info.csv";
-        List<Info> infoList = CSVtoList1(csvFilePath);
+        ArrayList<Info> infos = CSVtoList1(csvFilePath);
 
         //List<Grade> grades = parseGrades(studentData);
-        tableInfo.getItems().addAll(infoList);
+        tableInfo.getItems().addAll(infos);
 
         setupTable();
 
@@ -88,22 +89,26 @@ public class AdministratorInformationController implements Initializable{
         //represent the creation of the four column in the table
         //Comparator.comparing(Grade::getName)方法用于对这个"Grade"对象进行排序
         MFXTableColumn<Info> IDColumn = new MFXTableColumn<>("ID", true, Comparator.comparing(Info::getID));
+        MFXTableColumn<Info> classIDColumn = new MFXTableColumn<>("classID", true, Comparator.comparing(Info::getClassID));
         MFXTableColumn<Info> nameColumn = new MFXTableColumn<>("NAME", true, Comparator.comparing(Info::getName));
         MFXTableColumn<Info> PINColumn = new MFXTableColumn<>("PIN", true, Comparator.comparing(Info::getPIN));
 
         //setRowCellFactory方法的作用是用于创建每个单元格的外观和行为。
         IDColumn.setRowCellFactory(grade -> new MFXTableRowCell<>(Info::getID));
+        classIDColumn.setRowCellFactory(grade -> new MFXTableRowCell<>(Info::getClassID));
         nameColumn.setRowCellFactory(grade -> new MFXTableRowCell<>(Info::getName));
+
         PINColumn.setRowCellFactory(grade -> new MFXTableRowCell<>(Info::getPIN) {{
             setAlignment(Pos.CENTER_RIGHT);
         }});
         PINColumn.setAlignment(Pos.CENTER_RIGHT);
 
-        tableInfo.getTableColumns().addAll(IDColumn, nameColumn, PINColumn);
+        tableInfo.getTableColumns().addAll(IDColumn, classIDColumn, nameColumn, PINColumn);
 
         //设置表格的过滤器，以便用户可以根据不同的列和属性来筛选和查找表格中的数据。
         tableInfo.getFilters().addAll(
                 new StringFilter<>("ID", Info::getID),
+                new StringFilter<>("classID",Info::getClassID),
                 new StringFilter<>("Name", Info::getName),
                 new StringFilter<>("PIN", Info::getPIN)
         );
