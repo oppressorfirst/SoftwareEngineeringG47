@@ -25,19 +25,23 @@ public class StudentHomeController {
     public Text StudentID;
     public Text StudentClass;
     public LoginController loginController;
+
+    //给别的controller类用来传参
+    public String name;
+    public Info info;
     Boolean temp = true; // 防止多次点击
 
     @FXML
     public void initialize() {
+        //setName(loginController.name);
         updateLearningTopicText();
         updatePersonInfoText();
     }
 
-    //创建一个方法给别的controller类用来传参
-    private Info info;
 
-    public void setInfo(Info info) {
-        this.info = info;
+
+    public void setName(String name) {
+        this.name = name;
     }
         // 其他代码
 
@@ -48,7 +52,7 @@ public class StudentHomeController {
             PageController controller = new PageController();
             controller.changePage(toLearning);
             temp = false;
-            System.out.println(loginController.info);
+            System.out.println(loginController.name);
         }
     }
 
@@ -79,8 +83,25 @@ public class StudentHomeController {
         return info;
     }
 
+    public Info getInfoFromCsvByName() { // 这个方法根据 name 返回一个特定的学生信息
+
+        String csvFilePath = "./APP/src/main/Student_info.csv";
+        ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
+
+        Info info = null;
+
+
+        for (Info element : infos) {
+            if (element.getName().equals(this.name)) { // 根据特定值进行匹配
+                info = element; // 找到匹配的元素
+            }
+        }
+
+        return info;
+    }
+
     public void updatePersonInfoText() {
-        Info info = getInfoFromCsvByID();
+        Info info = getInfoFromCsvByName();
 
         StudentName.setText(String.format("%s", info.getName()));
         StudentID.setText(String.format("%s", info.getID()));
