@@ -23,6 +23,7 @@ public class LoginController {
     @FXML
     private MFXTextField passWord;
     boolean rejectDoubleCheck = true;
+    public String name;
 
 
     public Info info;
@@ -32,7 +33,7 @@ public class LoginController {
         String csvFilePath = "./APP/src/main/Student_info.csv";
         ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
 
-        String name = userName.getText(); // 要搜索的特定名字值
+        name = userName.getText(); // 要搜索的特定名字值
         Info info = null;
 
 
