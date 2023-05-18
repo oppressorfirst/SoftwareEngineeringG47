@@ -29,7 +29,7 @@ public class PageController {
         String title;
         String cssPath = null;
 
-        System.out.println(Btu.getId());
+       // System.out.println(Btu.getId());
 
         if(Btu.getId().equals("toHome")){
             Path = "student_home.fxml";
@@ -93,7 +93,7 @@ public class PageController {
      * @Overload #changePage(MFXButton)
      */
 
-    public void changePage(MFXButton Btu, int GoNum) throws IOException{
+    public void changePage(MFXButton Btu, int GoNum, String username) throws IOException{
         Stage PrimaryStage = (Stage)Btu.getScene().getWindow();
         String Path = null;
         String title;
@@ -134,16 +134,29 @@ public class PageController {
         else {
             title = null;
         }
+
+
         assert Path != null;
         FXMLLoader root = new FXMLLoader(Main.class.getResource(Path));
-        Scene scene = new Scene(root.load(),1000, 620);
 
+        Scene scene = new Scene(root.load(),1000, 620);
+        //System.out.println(getController());
         if(Path.equals("student_home.fxml") && GoNum==1){
+           // System.out.println((char[]) root.getController());
             StudentHomeController studentHomeController  = root.getController();
             FXMLLoader logLoader = (FXMLLoader) Btu.getScene().getProperties().get("FXMLLOADER");
             studentHomeController.loginController = logLoader.getController();
-            System.out.println(studentHomeController.loginController);
+
+            studentHomeController.setName(username);
+            studentHomeController.initialize();
+            System.out.println(studentHomeController.name);
+            //System.out.println(studentHomeController.name);
+            //System.out.println(studentHomeController.loginController);
         }
+
+       // System.out.println(Path);
+
+
 
         scene.getStylesheets().add(Objects.requireNonNull(Main.class.getResource(cssPath)).toExternalForm());
         Timeline timeline = new Timeline();
@@ -151,6 +164,7 @@ public class PageController {
             Stage stage = new Stage();
             stage.setResizable(false);
             MFXThemeManager.addOn(scene, Themes.DEFAULT, Themes.LEGACY);
+
             stage.setTitle(title);
             stage.setScene(scene);
             stage.show();

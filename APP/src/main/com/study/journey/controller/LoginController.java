@@ -46,18 +46,33 @@ public class LoginController {
         return info;
     }
 
+    public Info getAdmInfoFromCsvByName() { // 这个方法根据 Name 返回一个特定的学生信息
+        String csvFilePath = "./APP/src/main/Adm_info.csv";
+        ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
+
+        name = userName.getText(); // 要搜索的特定名字值
+        Info info = null;
+
+
+        for (Info element : infos) {
+            if (element.getName().equals(name)) { // 根据特定值进行匹配
+                info = element; // 找到匹配的元素
+            }
+        }
+
+        return info;
+    }
+
     // 用于判断用户是否有权利登录 （nicolas Yang）
     private int validLogin(String username, String password){
 
-
-        // 预定义的用户名和密码,之后删，并换成csv.文件的形式（nicolas）
-        String validUsername_stu = this.info.getName();
-        String validPassword_stu = this.info.getPIN();
-        String validUsername_adm = "tom";
-        String validPassword_adm = "1234567";
         // 真正的判断函数
         //对学生端的判断
         if (StudentRadioBtu.isSelected()) {
+            this.info = getInfoFromCsvByName();
+            // 预定义的用户名和密码,之后删，并换成csv.文件的形式（nicolas）
+            String validUsername_stu = this.info.getName();
+            String validPassword_stu = this.info.getPIN();
             if (username.equals(validUsername_stu) && password.equals(validPassword_stu) && rejectDoubleCheck) {
                     rejectDoubleCheck = false;
                     return 1;
@@ -70,6 +85,10 @@ public class LoginController {
             }
             //对管理员端的判断
         } else if (AdminRadioBtu.isSelected()) {
+            this.info = getAdmInfoFromCsvByName();
+            // 预定义的用户名和密码,之后删，并换成csv.文件的形式（nicolas）
+            String validUsername_adm = this.info.getName();
+            String validPassword_adm = this.info.getPIN();
             if (username.equals(validUsername_adm) && password.equals(validPassword_adm) && rejectDoubleCheck) {
                     rejectDoubleCheck = false;
                     return 5;
@@ -96,12 +115,12 @@ public class LoginController {
             String password;
             username = userName.getText();
             password = passWord.getText();
-            this.info = getInfoFromCsvByName();
+            //this.info = getInfoFromCsvByName();
 
             PageController controller = new PageController();
             switch (validLogin(username, password)) { // 开始匹配
                 case 1:
-                    controller.changePage(toHome,goStuNum);
+                    controller.changePage(toHome,goStuNum,username);
                     System.out.println("登录学生端成功");
                     break;
                 case 2:
@@ -115,7 +134,7 @@ public class LoginController {
                     System.out.println("请选择是要adm还是stu");
                     break;
                 case 5:
-                    controller.changePage(toHome,goAdmNum);
+                    controller.changePage(toHome,goAdmNum,username); //之后改
                     System.out.println("登录管理员端成功");
                     break;
             }
