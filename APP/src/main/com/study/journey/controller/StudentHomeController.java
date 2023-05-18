@@ -21,24 +21,25 @@ public class StudentHomeController {
     public MFXButton toIndex;
     @FXML
     public Text learningTopic;
+    @FXML
     public Text StudentName;
+    @FXML
     public Text StudentID;
+    @FXML
     public Text StudentClass;
     public LoginController loginController;
 
     //给别的controller类用来传参
-    public String name;
+    public String name ;
     public Info info;
     Boolean temp = true; // 防止多次点击
 
     @FXML
     public void initialize() {
-        //setName(loginController.name);
+        System.out.println(name);
         updateLearningTopicText();
         updatePersonInfoText();
     }
-
-
 
     public void setName(String name) {
         this.name = name;
@@ -71,16 +72,16 @@ public class StudentHomeController {
         ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
 
         String ID = "2020213332"; // 要搜索的特定ID值
-        Info info = null;
+        this.info = null;
 
 
         for (Info element : infos) {
             if (element.getID().equals(ID)) { // 根据特定值进行匹配
-                info = element; // 找到匹配的元素
+                this.info = element; // 找到匹配的元素
             }
         }
 
-        return info;
+        return this.info;
     }
 
     public Info getInfoFromCsvByName() { // 这个方法根据 name 返回一个特定的学生信息
@@ -88,24 +89,31 @@ public class StudentHomeController {
         String csvFilePath = "./APP/src/main/Student_info.csv";
         ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
 
-        Info info = null;
+        this.info = null;
 
 
         for (Info element : infos) {
             if (element.getName().equals(this.name)) { // 根据特定值进行匹配
-                info = element; // 找到匹配的元素
+                this.info = element; // 找到匹配的元素
             }
         }
 
-        return info;
+        return this.info;
     }
 
     public void updatePersonInfoText() {
-        Info info = getInfoFromCsvByName();
+        this.info = getInfoFromCsvByName();
+        //System.out.println("info: " + info);  // 调试语句
 
-        StudentName.setText(String.format("%s", info.getName()));
-        StudentID.setText(String.format("%s", info.getID()));
-        StudentClass.setText(String.format("%s", info.getClassID()));
+        if (info != null) {
+           // System.out.println("info.getName(): " + info.getName());  // 调试语句
+
+            StudentName.setText(String.format("%s", info.getName()));
+            StudentID.setText(String.format("%s", info.getID()));
+            StudentClass.setText(String.format("%s", info.getClassID()));
+        } else {
+            //System.out.println("info is null");  // 调试语句
+        }
     }
     public void updateLearningTopicText() {
         String csvFilePath = "./APP/src/main/CourseScore.csv";
