@@ -1,10 +1,10 @@
 package com.study.journey.entity;
 
 public class Info {
-    private final String ID;
-    private final String classID;
-    private final String name;
-    private final String PIN;
+    private String ID;
+    private String classID;
+    private String name;
+    private String PIN;
 
 
 
@@ -16,7 +16,21 @@ public class Info {
     }
 
 
+    public void setID(String ID){
+        this.ID = ID;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setClassID(String classID) {
+        this.classID = classID;
+    }
+
+    public void setPIN(String PIN) {
+        this.PIN = PIN;
+    }
 
     public String getID() {
         return ID;

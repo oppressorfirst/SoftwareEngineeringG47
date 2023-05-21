@@ -64,6 +64,44 @@ public class AdministratorInformationController implements Initializable{
         return infos;
     }
 
+    /*This method is for adding student in arraylist*/
+    public static void addStudentInfo(ArrayList<Info> infos, String ID, String classID, String name, String PIN) {
+        Info infoObj = new Info(ID, classID, name, PIN);
+        infos.add(infoObj);
+    }
+
+
+    /*This method is for removing student in arraylist, just by his/her ID*/
+    public static void removeStudentInfo(ArrayList<Info> infos, String ID) {
+        Info studentToRemove = null;
+        for (Info info : infos) {
+            if (info.getID().equals(ID)) {
+                studentToRemove = info;
+                break;
+            }
+        }
+        if (studentToRemove != null) {
+            infos.remove(studentToRemove);
+        }
+    }
+
+    /*This method is for updating student in arraylist,
+    * first of all we search student by ID,
+    * then update all the attributes inside*/
+    public static void updateStudentInfo(ArrayList<Info> infos, String ID, String newClassID, String newName, String newPIN) {
+        for (Info info : infos) {
+            if (info.getID().equals(ID)) {
+                info.setClassID(newClassID);
+                info.setName(newName);
+                info.setPIN(newPIN);
+                break;
+            }
+        }
+    }
+
+
+
+
 
 
     @Override
