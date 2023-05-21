@@ -24,7 +24,7 @@
          </image>
       </ImageView>
       <MFXButton fx:id="backHome" layoutX="11.0" layoutY="5.0" onMouseClicked="#toHome" prefHeight="41.0" prefWidth="44.0" text=" " />
-      <Text layoutX="33.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chanege Password">
+      <Text layoutX="33.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Password">
          <font>
             <Font name="Apple Color Emoji" size="26.0" />
          </font>
@@ -43,7 +43,7 @@
             <MFXPasswordField fx:id="nowPassword" layoutX="505.0" layoutY="111.0" prefHeight="51.0" prefWidth="302.0" />
             <MFXPasswordField fx:id="newPassword" layoutX="505.0" layoutY="196.0" prefHeight="51.0" prefWidth="302.0" />
             <MFXPasswordField fx:id="repeatPassword" layoutX="505.0" layoutY="282.0" prefHeight="51.0" prefWidth="302.0" />
-            <MFXButton layoutX="407.0" layoutY="384.0" prefHeight="62.0" prefWidth="166.0" rippleColor="WHITE" text="Submit" />
+            <MFXButton id="submit" fx:id="submit" layoutX="407.0" layoutY="384.0" onMouseClicked="#Submit" prefHeight="62.0" prefWidth="166.0" rippleColor="WHITE" text="Submit" />
          </children>
       </AnchorPane>
    </children>
