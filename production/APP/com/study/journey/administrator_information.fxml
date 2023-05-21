@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="620.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.AdministratorInformationController">
+<AnchorPane prefHeight="620.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.AdministratorStudentInformationController">
     <children>
         <AnchorPane maxHeight="51.0" maxWidth="1000.0" prefHeight="51.0" prefWidth="1000.0" stylesheets="@student_grades.css">
             <children>

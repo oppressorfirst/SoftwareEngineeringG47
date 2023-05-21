@@ -53,17 +53,38 @@ public class PageController {
             title = "AdministratorHome";
         }
         else if  (Btu.getId().equals("toStudentInformation")){
-            Path = "administrator_information.fxml";
-            cssPath = "administrator_information.fxml";
+            Path = "administrator_studentinformation.fxml";
+            cssPath = "administrator_studentinformation.css";
             title = "StudentInformation";
-        }
-        else {
+        } else if (Btu.getId().equals("quit")) {
+            Path = "log.fxml";
+            cssPath = "log.css";
+            title = "LOGIN";
+        } else if (Btu.getId().equals("toCourseSelection")) {
+            Path = "student_courseselection.fxml";
+            cssPath = "student_courseselection.css";
+            title = "Course Selection";
+        } else if (Btu.getId().equals("toClassSchedule")) {
+            Path = "student_schedule.fxml";
+            cssPath = "student_schedule.css";
+            title = "Schedule";
+        }else if (Btu.getId().equals("toInformation")) {
+            Path = "student_information.fxml";
+            cssPath = "student_information.css";
+            title = "Information";
+        }else if (Btu.getId().equals("toAchievement")) {
+            Path = "student_achievements.fxml";
+            cssPath = "student_achievements.css";
+            title = "Achievement";
+        }else {
             title = null;
         }
 
         assert Path != null;
         FXMLLoader root = new FXMLLoader(Main.class.getResource(Path));
         Scene scene = new Scene(root.load(),1000, 620);
+        if(Path.equals("log.fxml"))
+            scene.getProperties().put("FXMLLOADER", root);
         scene.getStylesheets().add(Objects.requireNonNull(Main.class.getResource(cssPath)).toExternalForm());
         Timeline timeline = new Timeline();
         KeyFrame keyFrame = new KeyFrame(Duration.millis(500), event -> {
@@ -127,8 +148,8 @@ public class PageController {
             title = "AdministratorHome";
         }
         else if  (Btu.getId().equals("toStudentInformation")){
-            Path = "administrator_information.fxml";
-            cssPath = "administrator_information.fxml";
+            Path = "administrator_studentinformation.fxml";
+            cssPath = "administrator_studentinformation.fxml";
             title = "StudentInformation";
         }
         else {

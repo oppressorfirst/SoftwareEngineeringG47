@@ -10,7 +10,7 @@ import javafx.scene.control.ToggleGroup;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import static com.study.journey.controller.AdministratorInformationController.CSVtoList1;
+import static com.study.journey.controller.AdministratorStudentInformationController.CSVtoList1;
 
 public class LoginController {
     public MFXRadioButton AdminRadioBtu;
@@ -33,7 +33,8 @@ public class LoginController {
         String csvFilePath = "./APP/src/main/Student_info.csv";
         ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
 
-        name = userName.getText(); // 要搜索的特定名字值
+        if(userName!=null)
+            name = userName.getText(); // 要搜索的特定名字值
         Info info = null;
 
 
@@ -50,7 +51,8 @@ public class LoginController {
         String csvFilePath = "./APP/src/main/Adm_info.csv";
         ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
 
-        name = userName.getText(); // 要搜索的特定名字值
+        if(userName!=null)
+            name = userName.getText(); // 要搜索的特定名字值
         Info info = null;
 
 
