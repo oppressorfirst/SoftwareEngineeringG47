@@ -1,38 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import io.github.palexdev.materialfx.controls.*?>
-<?import javafx.scene.chart.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="620.0" prefWidth="1000.0" stylesheets="@administrator_home.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.AdministratorHomeController">
+<AnchorPane prefHeight="620.0" prefWidth="1000.0" stylesheets="@administrator_home.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.AdministratorHomeController">
    <children>
       <AnchorPane maxHeight="51.0" maxWidth="1000.0" prefHeight="51.0" prefWidth="1000.0" stylesheets="@student_grades.css">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4f4f4f" height="51.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="1000.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6c9696" height="51.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="1000.0" />
             <Text id="MyGrades" fill="WHITE" layoutX="434.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" textAlignment="CENTER" wrappingWidth="185.53704833984375" />
+            <ImageView fitHeight="24.0" fitWidth="33.0" layoutX="967.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/quit.png" />
+               </image>
+            </ImageView>
+            <MFXButton id="quit" fx:id="quitSystem" layoutX="965.0" layoutY="11.0" onMouseClicked="#quit" prefHeight="27.0" prefWidth="27.0" text=" " />
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="9.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/home.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
       <AnchorPane layoutY="51.0" prefHeight="569.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
          <children>
-            <SplitPane fx:id="splitPane" dividerPositions="0.1458890374331551" layoutX="-6.0" prefHeight="569.0" prefWidth="1000.0">
+            <SplitPane fx:id="splitPane" dividerPositions="0.1458890374331551" layoutX="-6.0" prefHeight="569.0" prefWidth="1006.0">
               <items>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                <AnchorPane id="leftpane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <VBox id="side" layoutX="70.0" layoutY="65.0" prefHeight="567.0" prefWidth="495.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                           <children>
-                              <Rectangle id="side" arcHeight="5.0" arcWidth="5.0" fill="#efefef" height="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="144.0" />
-                              <MFXButton id="toStudentInformation" fx:id="toStudentInformation" onMouseClicked="#ToStudentInformation" prefHeight="47.0" prefWidth="146.0" rippleColor="#dd768e" text="Student Information" />
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#efefef" height="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="143.0" />
-                              <MFXButton id="toStudentInformation" prefHeight="47.0" prefWidth="146.0" rippleColor="#dd768e" text="Courese Management" />
-                           </children>
-                        </VBox>
+                        <MFXButton id="toStudentInformation" fx:id="toStudentInformation" layoutX="-18.0" layoutY="30.0" onMouseClicked="#ToStudentInformation" prefHeight="50.0" prefWidth="180.0" text="Student Information" />
+                        <MFXButton id="toCourse" layoutX="-16.0" layoutY="110.0" prefHeight="49.0" prefWidth="183.0" text="Course Management" />
+                        <MFXButton layoutX="-17.0" layoutY="190.0" prefHeight="40.0" prefWidth="115.0" text="Score Management" />
+                        <MFXButton layoutX="-29.0" layoutY="270.0" text="My Information" />
                      </children>
                   </AnchorPane>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="408.0" prefWidth="415.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="563.0" prefWidth="932.0">
                      <children>
                         <AnchorPane id="side" layoutX="68.0" layoutY="47.0" prefHeight="131.0" prefWidth="282.0">
                            <children>

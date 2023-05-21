@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="620.0" prefWidth="1000.0" stylesheets="@student_schedule.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.StudentScheduleController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4d79eb" height="51.0" stroke="WHITE" strokeType="INSIDE" width="1000.0" />
+      <ImageView fitHeight="37.0" fitWidth="44.0" layoutX="14.0" layoutY="6.0" onMouseClicked="#toHome" pickOnBounds="true" preserveRatio="true" y="1.0">
+         <image>
+            <Image url="@image/back.png" />
+         </image>
+      </ImageView>
+      <MFXButton fx:id="backHome" layoutX="11.0" layoutY="5.0" onMouseClicked="#toHome" prefHeight="41.0" prefWidth="44.0" text=" " />
+      <TableView fx:id="schedule" layoutX="60.0" layoutY="130.0" prefHeight="476.0" prefWidth="881.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="130.0">
+        <columns>
+          <TableColumn fx:id="Num" prefWidth="110.0" text=" " />
+          <TableColumn fx:id="Monday" prefWidth="110.0" text="Monday" />
+          <TableColumn fx:id="Tuesday" prefWidth="110.0" text="Tuesday" />
+          <TableColumn fx:id="Wednesday" prefWidth="110.0" text="Wednesday" />
+          <TableColumn fx:id="Thursday" prefWidth="110.0" text="Thursday" />
+          <TableColumn fx:id="Friday" prefWidth="110.0" text="Friday" />
+          <TableColumn fx:id="Saturday" prefWidth="110.0" resizable="false" text="Saturday" />
+          <TableColumn fx:id="Sunday" prefWidth="110.0" text="Sunday" />
+        </columns>
+      </TableView>
+      <Text layoutX="304.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Class Schedule" wrappingWidth="393.870361328125">
+         <font>
+            <Font name="Apple Symbols" size="61.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

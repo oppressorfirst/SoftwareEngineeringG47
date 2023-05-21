@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="620.0" prefWidth="1000.0" stylesheets="@student_information.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.StudentInformationController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4d79eb" height="51.0" stroke="WHITE" strokeType="INSIDE" width="1000.0" />
+      <Text fill="WHITE" layoutX="438.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information" wrappingWidth="124.870361328125">
+         <font>
+            <Font name="Apple Symbols" size="28.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="37.0" fitWidth="44.0" layoutX="14.0" layoutY="6.0" onMouseClicked="#toHome" pickOnBounds="true" preserveRatio="true" y="1.0">
+         <image>
+            <Image url="@image/back.png" />
+         </image>
+      </ImageView>
+      <MFXButton fx:id="backHome" layoutX="11.0" layoutY="5.0" onMouseClicked="#toHome" prefHeight="41.0" prefWidth="44.0" text=" " />
+      <Text layoutX="33.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chanege Password">
+         <font>
+            <Font name="Apple Color Emoji" size="26.0" />
+         </font>
+      </Text>
+      <AnchorPane id="textField" layoutX="-2.0" layoutY="120.0" prefHeight="501.0" prefWidth="1007.0">
+         <children>
+            <Text layoutX="366.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+            <Text layoutX="272.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Number">
+               <font>
+                  <Font name="Apple Color Emoji" size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="292.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Password" />
+            <Text layoutX="187.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repeat New Password" />
+            <MFXTextField fx:id="account" layoutX="505.0" layoutY="35.0" prefHeight="51.0" prefWidth="302.0" />
+            <MFXPasswordField fx:id="nowPassword" layoutX="505.0" layoutY="111.0" prefHeight="51.0" prefWidth="302.0" />
+            <MFXPasswordField fx:id="newPassword" layoutX="505.0" layoutY="196.0" prefHeight="51.0" prefWidth="302.0" />
+            <MFXPasswordField fx:id="repeatPassword" layoutX="505.0" layoutY="282.0" prefHeight="51.0" prefWidth="302.0" />
+            <MFXButton layoutX="407.0" layoutY="384.0" prefHeight="62.0" prefWidth="166.0" rippleColor="WHITE" text="Submit" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

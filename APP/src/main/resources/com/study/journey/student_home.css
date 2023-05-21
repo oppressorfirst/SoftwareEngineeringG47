@@ -45,3 +45,30 @@ AnchorPane {
     -fx-background-color:#b886f8;
     -fx-background-radius: 5px;
 }
+
+#quit{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#menuPart MFXButton{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#myAchievement{
+    -fx-background-color:#fdfa93;
+    -fx-background-radius: 5px;
+}
+#courseSelection{
+    -fx-background-color:#8083ef;
+    -fx-background-radius: 5px;
+}
+#classSchedules{
+    -fx-background-color:#f5c278;
+    -fx-background-radius: 5px;
+}
+#personalInformation{
+    -fx-background-color:#d28a90;
+    -fx-background-radius: 5px;
+}

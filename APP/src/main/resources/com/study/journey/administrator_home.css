@@ -19,9 +19,19 @@ AnchorPane {
     -fx-background-radius: 20px;
 }
 
-#toStudentInformation{
-    -fx-font-size: 12px;
-    -fx-background-color: #4f4f4f;
+#leftpane MFXButton{
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;
     -fx-font-family: Consolas;
-    -fx-text-fill: white;
+    -fx-text-fill: black;
+    -fx-pref-width: 180;
+    -fx-pref-height: 50;
+}
+
+#quit{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+#leftpane{
+    -fx-background-color: white;
 }

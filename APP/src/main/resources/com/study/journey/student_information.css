@@ -1,0 +1,20 @@
+#backHome{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+AnchorPane{
+    -fx-background-color: #bebebe;
+}
+#textField{
+    -fx-background-color: white;
+}
+
+#textField Text{
+    -fx-font-size: 25px;
+    -fx-font-family: "Apple Color Emoji";
+}
+
+#textField MFXButton{
+    -fx-background-color: #a6adb2;
+    -fx-font-size: 30px;
+}
