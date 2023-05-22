@@ -6,6 +6,7 @@ import io.github.palexdev.materialfx.controls.MFXTableColumn;
 import io.github.palexdev.materialfx.controls.MFXTableView;
 import io.github.palexdev.materialfx.controls.cell.MFXTableRowCell;
 import io.github.palexdev.materialfx.filter.StringFilter;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
@@ -22,11 +23,27 @@ import java.util.ResourceBundle;
 public class AdministratorStudentInformationController implements Initializable{
     public MFXButton toAdministratorHome;
     public MFXTableView<Info> tableInfo;
+    public MFXButton add;
+    public MFXButton edit;
+    public MFXButton remove;
+    public PopUpPageController popUpPageController;
 
     Boolean temp = true; // 防止多次点击
     public MFXButton toCourse;
     public MFXButton toScoreManagement;
     public MFXButton toAdminInformation;
+
+
+
+
+    @FXML
+    private void callPopUpPage(ActionEvent e) throws IOException {
+            System.out.println(e.getSource());
+            popUpPageController = new PopUpPageController().makePopUpPage((MFXButton) e.getSource());
+        System.out.println(popUpPageController);
+
+    }
+
 
 
     @FXML
