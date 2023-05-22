@@ -12,12 +12,11 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
 
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class AdministratorStudentInformationController implements Initializable{
@@ -113,13 +112,27 @@ public class AdministratorStudentInformationController implements Initializable{
         return infos;
     }
 
-    /*This method is for adding student in arraylist*/
+    /*This method is for adding student in arraylist and write it into the csv file*/
     public static void addStudentInfo(ArrayList<Info> infos, String ID, String classID, String name, String PIN) {
         Info infoObj = new Info(ID, classID, name, PIN);
         infos.add(infoObj);
+
+        try {
+            String csvFilePath = "./APP/src/main/Student_info.csv";
+
+            // 构建要添加的新行
+            String newLine = ID + "," + classID + "," + name + "," + PIN;
+
+            // 将新行追加到 CSV 文件末尾
+            BufferedWriter writer = new BufferedWriter(new FileWriter(csvFilePath, true));
+            writer.write(newLine);
+            writer.newLine();
+            writer.close();
+            System.out.println("CSV 文件修改成功");
+        } catch (IOException e) {
+            System.out.println("CSV 文件修改失败：" + e.getMessage());
+        }
     }
-
-
     /*This method is for removing student in arraylist, just by his/her ID*/
     public static void removeStudentInfo(ArrayList<Info> infos, String ID) {
         Info studentToRemove = null;
@@ -131,6 +144,42 @@ public class AdministratorStudentInformationController implements Initializable{
         }
         if (studentToRemove != null) {
             infos.remove(studentToRemove);
+        }
+
+        try {
+            String csvFilePath = "./APP/src/main/Student_info.csv";
+            // 读取原始CSV文件内容
+            List<String> lines = new ArrayList<>();
+            BufferedReader reader = new BufferedReader(new FileReader(csvFilePath));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                lines.add(line);
+            }
+            reader.close();
+
+            // 构建更新后的CSV内容
+            List<String> updatedLines = new ArrayList<>();
+            for (String csvLine : lines) {
+                String[] data = csvLine.split(",");
+                if (data.length >= 2 && data[0].equals(ID)) {
+                    // 跳过要删除的行
+                    continue;
+                }
+                // 构建更新后的行
+                updatedLines.add(csvLine);
+            }
+
+            // 写入更新后的内容到CSV文件
+            BufferedWriter writer = new BufferedWriter(new FileWriter(csvFilePath));
+            for (String csvLine : updatedLines) {
+                writer.write(csvLine);
+                writer.newLine();
+            }
+            writer.close();
+
+            System.out.println("CSV文件删除成功");
+        } catch (IOException e) {
+            System.out.println("CSV文件删除失败：" + e.getMessage());
         }
     }
 
@@ -145,6 +194,44 @@ public class AdministratorStudentInformationController implements Initializable{
                 info.setPIN(newPIN);
                 break;
             }
+        }
+
+        try {
+            String csvFilePath = "./APP/src/main/Student_info.csv";
+            // 读取原始CSV文件内容
+            List<String> lines = new ArrayList<>();
+            BufferedReader reader = new BufferedReader(new FileReader(csvFilePath));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                lines.add(line);
+            }
+            reader.close();
+
+            // 构建更新后的CSV内容
+            List<String> updatedLines = new ArrayList<>();
+            for (String csvLine : lines) {
+                String[] data = csvLine.split(",");
+                if (data.length >= 2 && data[0].equals(ID)) {
+                    // 更新班级ID、姓名和PIN
+                    data[1] = newClassID;
+                    data[2] = newName;
+                    data[3] = newPIN;
+                }
+                // 构建更新后的行
+                updatedLines.add(String.join(",", data));
+            }
+
+            // 写入更新后的内容到CSV文件
+            BufferedWriter writer = new BufferedWriter(new FileWriter(csvFilePath));
+            for (String csvLine : updatedLines) {
+                writer.write(csvLine);
+                writer.newLine();
+            }
+            writer.close();
+
+            System.out.println("CSV文件修改成功");
+        } catch (IOException e) {
+            System.out.println("CSV文件修改失败：" + e.getMessage());
         }
     }
 
