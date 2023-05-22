@@ -35,7 +35,7 @@ public class StudentInformationController {
     @FXML
     public MFXPasswordField repeatPassword;
     @FXML
-    public MFXButton submit;
+    public MFXButton Submit;
     Boolean temp = true; // 防止多次点击
     private Info info;
 

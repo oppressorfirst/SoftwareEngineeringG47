@@ -60,7 +60,7 @@
                   <Font name="Consolas" size="15.0" />
                </font>
             </MFXPasswordField>
-            <MFXButton layoutX="407.0" layoutY="384.0" prefHeight="62.0" prefWidth="166.0" rippleColor="WHITE" text="Submit" />
+            <MFXButton id="Submit" fx:id="Submit" layoutX="407.0" layoutY="384.0" onMouseClicked="#Submit" prefHeight="62.0" prefWidth="166.0" rippleColor="WHITE" text="Submit" />
          </children>
       </AnchorPane>
    </children>
