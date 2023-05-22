@@ -65,9 +65,9 @@
                               <Font name="Apple Symbols" size="21.0" />
                            </font>
                         </Text>
-                        <MFXButton id="add" fx:id="add" layoutX="-16.0" layoutY="379.0" onAction="#callPopUpPage" prefWidth="69.0" text=" " />
-                        <MFXButton id="edit" fx:id="edit" layoutX="-11.0" layoutY="435.0" onAction="#callPopUpPage" text=" " />
-                        <MFXButton id="remove" fx:id="remove" layoutX="-19.0" layoutY="502.0" onAction="#callPopUpPage" text=" " />
+                        <MFXButton id="add" fx:id="add" layoutX="-16.0" layoutY="379.0" onAction="#callPopUpPage" prefWidth="69.0" rippleColor="#34f564" text=" " />
+                        <MFXButton id="edit" fx:id="edit" layoutX="-11.0" layoutY="435.0" onAction="#callPopUpPage" rippleColor="#30aae8" text=" " />
+                        <MFXButton id="remove" fx:id="remove" layoutX="-19.0" layoutY="502.0" onAction="#callPopUpPage" rippleColor="RED" text=" " />
                      </children>
                   </AnchorPane>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="408.0" prefWidth="415.0">
