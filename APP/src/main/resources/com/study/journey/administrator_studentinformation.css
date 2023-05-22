@@ -30,3 +30,8 @@ AnchorPane {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 }
+
+#add,#edit,#remove{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
