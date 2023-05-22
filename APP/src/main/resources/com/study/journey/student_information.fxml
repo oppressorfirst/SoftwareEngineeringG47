@@ -39,11 +39,28 @@
             </Text>
             <Text layoutX="292.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Password" />
             <Text layoutX="187.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repeat New Password" />
-            <MFXTextField fx:id="account" layoutX="505.0" layoutY="35.0" prefHeight="51.0" prefWidth="302.0" />
-            <MFXPasswordField fx:id="nowPassword" layoutX="505.0" layoutY="111.0" prefHeight="51.0" prefWidth="302.0" />
-            <MFXPasswordField fx:id="newPassword" layoutX="505.0" layoutY="196.0" prefHeight="51.0" prefWidth="302.0" />
-            <MFXPasswordField fx:id="repeatPassword" layoutX="505.0" layoutY="282.0" prefHeight="51.0" prefWidth="302.0" />
-            <MFXButton id="submit" fx:id="submit" layoutX="407.0" layoutY="384.0" onMouseClicked="#Submit" prefHeight="62.0" prefWidth="166.0" rippleColor="WHITE" text="Submit" />
+            <MFXTextField id="accNO" fx:id="account" floatMode="ABOVE" layoutX="505.0" layoutY="35.0" prefHeight="51.0" prefWidth="302.0">
+            <font>
+               <Font name="Consolas" size="15.0" />
+            </font>
+            </MFXTextField>
+
+            <MFXPasswordField id="nowPassword" fx:id="nowPassword" floatMode="ABOVE" layoutX="505.0" layoutY="117.0" prefHeight="51.0" prefWidth="302.0">
+               <font>
+                  <Font name="Consolas" size="15.0" />
+               </font>
+            </MFXPasswordField>
+            <MFXPasswordField id="newPassword" fx:id="newPassword" floatMode="ABOVE" layoutX="505.0" layoutY="196.0" prefHeight="51.0" prefWidth="302.0">
+               <font>
+                  <Font name="Consolas" size="15.0" />
+               </font>
+            </MFXPasswordField>
+            <MFXPasswordField id="repeatPassword" fx:id="repeatPassword" floatMode="ABOVE" layoutX="505.0" layoutY="282.0" prefHeight="51.0" prefWidth="302.0">
+               <font>
+                  <Font name="Consolas" size="15.0" />
+               </font>
+            </MFXPasswordField>
+            <MFXButton layoutX="407.0" layoutY="384.0" prefHeight="62.0" prefWidth="166.0" rippleColor="WHITE" text="Submit" />
          </children>
       </AnchorPane>
    </children>

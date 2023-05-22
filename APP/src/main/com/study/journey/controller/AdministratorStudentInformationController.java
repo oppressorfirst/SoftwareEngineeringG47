@@ -24,6 +24,39 @@ public class AdministratorStudentInformationController implements Initializable{
     public MFXTableView<Info> tableInfo;
 
     Boolean temp = true; // 防止多次点击
+    public MFXButton toCourse;
+    public MFXButton toScoreManagement;
+    public MFXButton toAdminInformation;
+
+
+    @FXML
+    private void ToCourse() throws IOException {
+        if(temp) {
+            PageController controller = new PageController();
+            controller.changePage(toCourse);
+            temp = false;
+        }
+
+    }
+    @FXML
+    private void ToScoreManagement() throws IOException {
+        if(temp) {
+            PageController controller = new PageController();
+            controller.changePage(toScoreManagement);
+            temp = false;
+        }
+
+    }
+    @FXML
+    private void ToInformation() throws IOException {
+        if(temp) {
+            PageController controller = new PageController();
+            controller.changePage(toAdminInformation);
+            temp = false;
+        }
+
+    }
+
 
     @FXML
     private void ToAdministratorHome() throws IOException {

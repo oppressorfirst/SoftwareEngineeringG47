@@ -38,7 +38,7 @@ public class PageController {
         } else if (Btu.getId().equals("toLearning")) {
             Path = "student_learningmodule.fxml";
             cssPath = "student_learningmodule.css";
-            title = "LearningModule";
+            title = "Learning Module";
         } else if (Btu.getId().equals("backHome")) {
             Path = "student_home.fxml";
             cssPath = "student_home.css";
@@ -46,16 +46,16 @@ public class PageController {
         } else if (Btu.getId().equals("toGrades")) {
             Path = "student_grades.fxml";
             cssPath = "student_grades.css";
-            title = "MyGrades";
+            title = "My Grades";
         } else if (Btu.getId().equals("toAdministratorHome")) {
             Path = "administrator_home.fxml";
             cssPath = "administrator_home.css";
-            title = "AdministratorHome";
+            title = "Administrator Home";
         }
         else if  (Btu.getId().equals("toStudentInformation")){
             Path = "administrator_studentinformation.fxml";
             cssPath = "administrator_studentinformation.css";
-            title = "StudentInformation";
+            title = "Student Information";
         } else if (Btu.getId().equals("quit")) {
             Path = "log.fxml";
             cssPath = "log.css";
@@ -76,6 +76,18 @@ public class PageController {
             Path = "student_achievements.fxml";
             cssPath = "student_achievements.css";
             title = "Achievement";
+        }else if (Btu.getId().equals("toCourse")) {
+            Path = "admin_coursemanagement.fxml";
+            cssPath = "admin_coursemanagement.css";
+            title = "Course Management";
+        }else if (Btu.getId().equals("toScoreManagement")) {
+            Path = "admin_scoremanagement.fxml";
+            cssPath = "admin_scoremanagement.css";
+            title = "Score Management";
+        }else if (Btu.getId().equals("toAdminInformation")) {
+            Path = "admin_myinformation.fxml";
+            cssPath = "admin_myinformation.css";
+            title = "Information";
         }else {
             title = null;
         }

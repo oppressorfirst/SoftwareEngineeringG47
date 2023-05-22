@@ -11,8 +11,12 @@ public class AdministratorHomeController {
     public SplitPane splitPane;
 
 
-    public MFXButton toStudentInformation;
+
     public MFXButton quitSystem;
+    public MFXButton toStudentInformation;
+    public MFXButton toCourse;
+    public MFXButton toScoreManagement;
+    public MFXButton toAdminInformation;
 
     Boolean temp = true; // 防止多次点击
     @FXML
@@ -20,6 +24,34 @@ public class AdministratorHomeController {
         if(temp) {
             PageController controller = new PageController();
             controller.changePage(toStudentInformation);
+            temp = false;
+        }
+
+    }
+
+    @FXML
+    private void ToCourse() throws IOException {
+        if(temp) {
+            PageController controller = new PageController();
+            controller.changePage(toCourse);
+            temp = false;
+        }
+
+    }
+    @FXML
+    private void ToScoreManagement() throws IOException {
+        if(temp) {
+            PageController controller = new PageController();
+            controller.changePage(toScoreManagement);
+            temp = false;
+        }
+
+    }
+    @FXML
+    private void ToInformation() throws IOException {
+        if(temp) {
+            PageController controller = new PageController();
+            controller.changePage(toAdminInformation);
             temp = false;
         }
 
