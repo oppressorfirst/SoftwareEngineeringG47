@@ -21,6 +21,7 @@ import java.util.ResourceBundle;
 
 public class AdministratorStudentInformationController implements Initializable{
     public MFXButton toAdministratorHome;
+    public MFXButton toStudentInformation;
     public MFXTableView<Info> tableInfo;
     public MFXButton add;
     public MFXButton edit;
@@ -43,7 +44,15 @@ public class AdministratorStudentInformationController implements Initializable{
 
     }
 
+    @FXML
+    private void ToStudentInformation() throws IOException {
+        if(temp) {
+            PageController controller = new PageController();
+            controller.changePage(toStudentInformation);
+            temp = false;
+        }
 
+    }
 
     @FXML
     private void ToCourse() throws IOException {

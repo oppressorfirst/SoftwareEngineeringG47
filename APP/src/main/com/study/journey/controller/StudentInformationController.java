@@ -114,18 +114,22 @@ public class StudentInformationController {
         String strNowPassword = this.nowPassword.getText();
         String strNewPassword = this.newPassword.getText();
         String strRepeatPassword = this.repeatPassword.getText();
-        if(strNowPassword.equals(info.getPIN())) {
-            if(strNewPassword.equals(strRepeatPassword)) {
-                this.info.setPIN(strNewPassword);
-                System.out.println("密码修改成功");
-                updateCsvFile(this.info.getID(),strNewPassword);
-            }else {
-                System.out.println("两边密码输入不一致");
+        if(strNowPassword.isEmpty()||strNewPassword.isEmpty()||strRepeatPassword.isEmpty()){
+            System.out.println("别输空的，请重新输");
+        }else {
+            if (strNowPassword.equals(info.getPIN())) {
+                if (strNewPassword.equals(strRepeatPassword)) {
+                    this.info.setPIN(strNewPassword);
+                    System.out.println("密码修改成功");
+                    updateCsvFile(this.info.getID(), strNewPassword);
+                } else {
+                    System.out.println("两边密码输入不一致");
+                }
+            } else {
+                System.out.println("密码不正确！");
             }
-        } else {
-            System.out.println("密码不正确！");
+            System.out.println(this.info.getName());
+            System.out.println(this.info.getPIN());
         }
-        System.out.println(this.info.getName());
-        System.out.println(this.info.getPIN());
     }
 }
