@@ -18,3 +18,10 @@ AnchorPane{
     -fx-background-color: #a6adb2;
     -fx-font-size: 30px;
 }
+
+MFXTextField {
+    -fx-font-size: 20px;
+}
+MFXPasswordField {
+    -fx-font-size: 20px
+}

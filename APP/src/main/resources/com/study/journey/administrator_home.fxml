@@ -38,9 +38,9 @@
                 <AnchorPane id="leftpane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
                         <MFXButton id="toStudentInformation" fx:id="toStudentInformation" layoutX="-18.0" layoutY="30.0" onMouseClicked="#ToStudentInformation" prefHeight="50.0" prefWidth="180.0" text="Student Information" />
-                        <MFXButton id="toCourse" layoutX="-16.0" layoutY="110.0" prefHeight="49.0" prefWidth="183.0" text="Course Management" />
-                        <MFXButton layoutX="-17.0" layoutY="190.0" prefHeight="40.0" prefWidth="115.0" text="Score Management" />
-                        <MFXButton layoutX="-29.0" layoutY="270.0" text="My Information" />
+                        <MFXButton onMouseClicked="#ToCourse" id="toCourse" fx:id="toCourse" layoutX="-16.0" layoutY="110.0" prefHeight="49.0" prefWidth="183.0" text="Course Management" />
+                        <MFXButton onMouseClicked="#ToScoreManagement" id="toScoreManagement" fx:id="toScoreManagement" layoutX="-17.0" layoutY="190.0" prefHeight="40.0" prefWidth="115.0" text="Score Management" />
+                        <MFXButton onMouseClicked="#ToInformation" id="toAdminInformation" fx:id="toAdminInformation" layoutX="-29.0" layoutY="270.0" text="My Information" />
                      </children>
                   </AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="563.0" prefWidth="932.0">
