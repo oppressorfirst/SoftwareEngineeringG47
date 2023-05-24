@@ -12,6 +12,8 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
 import javafx.scene.input.MouseEvent;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -33,9 +35,43 @@ public class StudentAchievementsController implements Initializable {
             }
     }
 
+    public static ArrayList<Achievement> CSVtoList2(String csvFilePath) {
+        ArrayList<Achievement> achievements = new ArrayList<>();
+        String csvSplitBy = ",";
+        String line;
+
+        try (BufferedReader br = new BufferedReader(new FileReader(csvFilePath))) {
+            br.readLine(); // Skip the first line (header)
+            while ((line = br.readLine()) != null) {
+
+                String[] values = line.split(csvSplitBy);
+
+                //String.trim()可以吧数据间的空格去掉
+                String name = values[0].trim();
+                String level = values[1].trim();
+                String year = values[2].trim();
+
+                Achievement achievementObj = new Achievement(name, level, year);
+                achievements.add(achievementObj);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return achievements;
+    }
+
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        
+
+        String csvFilePath = "./APP/src/main/Achievement.csv";
+        ArrayList<Achievement> achievements = CSVtoList2(csvFilePath);
+        for (Achievement achievement : achievements) {
+            System.out.println(achievement.getName() + " " + achievement.getLevel() + " " + achievement.getYear());
+        }
+        table.getItems().addAll(achievements);
         setupTable();
         table.autosizeColumnsOnInitialization();
     }
