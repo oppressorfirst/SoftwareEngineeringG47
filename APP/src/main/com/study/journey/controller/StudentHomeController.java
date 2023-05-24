@@ -3,11 +3,14 @@ package com.study.journey.controller;
 import com.study.journey.entity.Grade;
 import com.study.journey.entity.Info;
 import io.github.palexdev.materialfx.controls.MFXButton;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 
+import java.awt.*;
 import java.io.IOException;
+import java.net.URI;
 import java.util.ArrayList;
 
 import static com.study.journey.controller.AdministratorStudentInformationController.CSVtoList1;
@@ -103,7 +106,7 @@ public class StudentHomeController {
     @FXML
     private void toAchievement(MouseEvent event) throws IOException {
         if(temp) {
-            System.out.println(event.getButton().name());
+            //System.out.println(event.getButton().name());
             PageController controller = new PageController();
             controller.changePage(toAchievement);
             temp = false;
@@ -175,4 +178,18 @@ public class StudentHomeController {
         learningTopic.setText(String.format("%d", arrayListSize));
     }
 
+    public void openWeb(ActionEvent actionEvent) {
+        String url;
+        if(actionEvent.getSource().equals(toEmail)) {
+            url = "https://mail.qmul.ac.uk"; // 指定要打开的网页URL
+        }
+        else {
+            url = "https://scholar.google.com"; // 指定要打开的网页URL
+        }
+        try {
+            Desktop.getDesktop().browse(new URI(url));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

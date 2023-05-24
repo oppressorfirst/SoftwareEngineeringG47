@@ -39,6 +39,10 @@ public  class PopUpPageController {
             Path = "remove.fxml";
             cssPath = "remove.css";
             title = "Remove Student";
+        } else if (button.getId().equals("calc")) {
+            Path = "GPA.fxml";
+            cssPath = "GPA.css";
+            title = "Current GPA";
         } else {
             title = null;
         }

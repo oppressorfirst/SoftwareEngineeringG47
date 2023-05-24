@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="620.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.StudentGradesController">
+<AnchorPane prefHeight="620.0" prefWidth="1000.0" stylesheets="@student_grades.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.StudentGradesController">
    <children>
       <AnchorPane maxHeight="51.0" maxWidth="1000.0" prefHeight="51.0" prefWidth="1000.0" stylesheets="@student_grades.css">
          <children>
@@ -25,6 +25,7 @@
       <AnchorPane layoutY="51.0" prefHeight="569.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
          <children>
             <MFXTableView fx:id="table" prefHeight="569.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <MFXButton id="calc" fx:id="calc" layoutX="182.0" layoutY="518.0" onAction="#openGPA" prefHeight="40.0" prefWidth="224.0" text="Calculate GPA" />
          </children>
       </AnchorPane>
    </children>
