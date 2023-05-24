@@ -118,8 +118,8 @@
                </children></AnchorPane>
             <MFXButton fx:id="toLearning" layoutX="40.0" layoutY="46.0" onMouseClicked="#toLearning" prefHeight="85.0" prefWidth="145.0" rippleColor="#807b7b" text=" " />
             <MFXButton fx:id="toGrades" layoutX="297.0" layoutY="46.0" onMouseClicked="#toGrades" prefHeight="85.0" prefWidth="145.0" text=" " />
-            <MFXButton fx:id="toEmail" layoutX="550.0" layoutY="46.0" prefHeight="85.0" prefWidth="145.0" text=" " />
-            <MFXButton fx:id="toIndex" layoutX="802.0" layoutY="46.0" prefHeight="85.0" prefWidth="145.0" text=" " />
+            <MFXButton id="toMail" fx:id="toEmail" onAction="#openWeb" layoutX="550.0" layoutY="46.0" prefHeight="85.0" prefWidth="145.0" text=" " />
+            <MFXButton fx:id="toIndex" layoutX="802.0" onAction="#openWeb" layoutY="46.0" prefHeight="85.0" prefWidth="145.0" text=" " />
             <Text layoutX="61.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Learning module">
                <font>
                   <Font size="15.0" />

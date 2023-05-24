@@ -7,6 +7,7 @@ import io.github.palexdev.materialfx.controls.MFXTableView;
 import io.github.palexdev.materialfx.controls.cell.MFXTableRowCell;
 import io.github.palexdev.materialfx.filter.IntegerFilter;
 import io.github.palexdev.materialfx.filter.StringFilter;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
@@ -26,6 +27,8 @@ public class StudentGradesController implements Initializable {
 
     public MFXButton backHome;
     public MFXTableView<Grade> table;
+    public MFXButton calc;
+    PopUpPageController popUpPageController;
 
     Boolean temp = true; // 防止多次点击
     @FXML
@@ -130,5 +133,14 @@ public class StudentGradesController implements Initializable {
                 new IntegerFilter<>("Credit", Grade::getCredit),
                 new StringFilter<>("Grade", Grade::getGrade)
         );
+    }
+
+
+
+    @FXML
+    private void openGPA(ActionEvent e) throws IOException {
+        System.out.println(e.getSource());
+        popUpPageController = new PopUpPageController().makePopUpPage((MFXButton) e.getSource());
+        System.out.println(popUpPageController);
     }
 }

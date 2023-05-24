@@ -19,9 +19,8 @@
          </image>
       </ImageView>
       <MFXButton fx:id="backHome" layoutX="11.0" layoutY="5.0" onMouseClicked="#toHome" prefHeight="41.0" prefWidth="44.0" text=" " />
-      <TableView fx:id="schedule" layoutX="60.0" layoutY="130.0" prefHeight="476.0" prefWidth="881.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="130.0">
+      <TableView fx:id="schedule" layoutX="169.0" layoutY="130.0" prefHeight="476.0" prefWidth="772.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="130.0">
         <columns>
-          <TableColumn fx:id="Num" prefWidth="110.0" text=" " />
           <TableColumn fx:id="Monday" prefWidth="110.0" text="Monday" />
           <TableColumn fx:id="Tuesday" prefWidth="110.0" text="Tuesday" />
           <TableColumn fx:id="Wednesday" prefWidth="110.0" text="Wednesday" />
@@ -34,6 +33,46 @@
       <Text layoutX="304.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Class Schedule" wrappingWidth="393.870361328125">
          <font>
             <Font name="Apple Symbols" size="61.0" />
+         </font>
+      </Text>
+      <Text layoutX="67.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8:00-8:45" wrappingWidth="91.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="67.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8:50-9:35" wrappingWidth="91.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="55.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9:50-10:35" wrappingWidth="105.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="50.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10:40-11:25" wrappingWidth="105.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="55.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11:30-12:15" wrappingWidth="105.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="47.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13:00-13:45" wrappingWidth="111.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="47.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13:50-14:35" wrappingWidth="111.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="47.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14:45-15:30" wrappingWidth="111.0">
+         <font>
+            <Font size="20.0" />
          </font>
       </Text>
    </children>
