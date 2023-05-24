@@ -4,9 +4,15 @@ import java.util.Date;
 
 public class Achievement {
 
-    private  String name;
+    private String name;
     private String level;
     private String year;
+
+    public Achievement(String name, String level, String year) {
+        setName(name);
+        setLevel(level);
+        setYear(year);
+    }
 
     public String getName() {
         return name;
