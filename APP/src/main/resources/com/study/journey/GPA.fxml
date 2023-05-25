@@ -5,7 +5,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@GPA.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.GPA">
    <children>
-      <Text layoutX="99.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Current GPA is:" />
+      <Text layoutX="70.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Current GPA is:" />
       <Text id="gpa" fx:id="gpa" layoutX="199.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.00" />
       <Text layoutX="307.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/ 4" />
    </children>

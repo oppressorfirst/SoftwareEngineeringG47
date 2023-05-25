@@ -1,5 +1,6 @@
 package com.study.journey.controller;
 
+import com.study.journey.Main;
 import com.study.journey.entity.Course;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import io.github.palexdev.materialfx.controls.MFXTableView;
@@ -38,8 +39,7 @@ public class StudentCourseSelectionController {
     public void toHome(MouseEvent mouseEvent) throws IOException {
 
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(backHome);
+            Main.controller.changePage(backHome);
             temp = false;
         }
     }

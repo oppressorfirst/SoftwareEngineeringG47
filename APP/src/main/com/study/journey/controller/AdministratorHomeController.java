@@ -1,5 +1,6 @@
 package com.study.journey.controller;
 
+import com.study.journey.Main;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import javafx.fxml.FXML;
 import javafx.scene.control.SplitPane;
@@ -30,8 +31,7 @@ public class AdministratorHomeController {
     @FXML
     private void ToStudentInformation() throws IOException {
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(toStudentInformation);
+            Main.controller.changePage(toStudentInformation);
             temp = false;
         }
 
@@ -43,8 +43,7 @@ public class AdministratorHomeController {
     @FXML
     private void ToCourse() throws IOException {
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(toCourse);
+            Main.controller.changePage(toCourse);
             temp = false;
         }
 
@@ -56,8 +55,7 @@ public class AdministratorHomeController {
     @FXML
     private void ToScoreManagement() throws IOException {
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(toScoreManagement);
+            Main.controller.changePage(toScoreManagement);
             temp = false;
         }
 
@@ -69,8 +67,7 @@ public class AdministratorHomeController {
     @FXML
     private void ToInformation() throws IOException {
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(toAdminInformation);
+            Main.controller.changePage(toAdminInformation);
             temp = false;
         }
 
@@ -81,8 +78,7 @@ public class AdministratorHomeController {
      */
     public void quit(MouseEvent mouseEvent) throws IOException {
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(quitSystem);
+            Main.controller.changePage(quitSystem);
             temp = false;
             //System.out.println(loginController.name);
         }

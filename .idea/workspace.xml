@@ -5,16 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5eeb13b7-0f29-410e-81ee-9a6454090f2d" name="更改" comment="javadoc update">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/FeedbackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/feedback.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/feedback.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2023_5_25_21_01____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2023_5_25_21_01____.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/Student_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/Student_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminCourseManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminCourseManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminMyInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminMyInformationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminScoreManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminScoreManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdministratorHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdministratorHomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdministratorStudentInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdministratorStudentInformationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/PopUpPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/PopUpPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentAchievementsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentAchievementsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentCourseSelectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentCourseSelectionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentGradesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentGradesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentHomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentInformationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentLearningModuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentLearningModuleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentScheduleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/GPA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/GPA.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/add.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/add.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/admin_coursemanagement.css" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/admin_coursemanagement.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/administrator_home.css" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/administrator_home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/administrator_studentinformation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/administrator_studentinformation.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/edit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/edit.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/log.css" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/log.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/log.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/log.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/remove.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/remove.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_achievements.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_achievements.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_courseselection.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_courseselection.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_grades.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_grades.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_information.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_information.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,22 +74,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/18421/IdeaProjects&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/18421/IdeaProjects",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "inlay.hints",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="APP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.study.journey.APP" />
@@ -84,6 +127,7 @@
       <workItem from="1685007475604" duration="3000" />
       <workItem from="1685019698123" duration="2357000" />
       <workItem from="1685022073736" duration="82000" />
+      <workItem from="1685027212205" duration="1470000" />
     </task>
     <task id="LOCAL-00001" summary="javadoc update">
       <created>1685021880322</created>

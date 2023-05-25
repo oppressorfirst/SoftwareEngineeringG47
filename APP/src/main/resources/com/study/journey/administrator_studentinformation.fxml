@@ -50,12 +50,12 @@
                               <Image url="@image/remove.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="79.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add" wrappingWidth="35.0">
+                        <Text layoutX="71.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add" wrappingWidth="51.33333333333337">
                            <font>
                               <Font name="Apple Symbols" size="21.0" />
                            </font>
                         </Text>
-                        <Text layoutX="79.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit" wrappingWidth="35.0">
+                        <Text layoutX="71.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit" wrappingWidth="51.33333333333337">
                            <font>
                               <Font name="Apple Symbols" size="21.0" />
                            </font>

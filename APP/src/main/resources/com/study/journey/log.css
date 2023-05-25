@@ -25,3 +25,8 @@ Label {
     -fx-font-family: Impact;
     -fx-font-size: 25px;
 }
+
+#feedback{
+    -fx-text-fill: red;
+    -fx-background-color: #ffffff;
+}

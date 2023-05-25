@@ -33,6 +33,8 @@ public class PageController {
      * @param Btu the button that triggers the page change.
      * @throws IOException if an I/O error occurs while loading the FXML file or setting up the scene.
      */
+
+    public Stage studentHomePage;
     public void changePage(MFXButton Btu) throws IOException{
         Stage PrimaryStage = (Stage)Btu.getScene().getWindow();
         String Path = null;
@@ -103,13 +105,22 @@ public class PageController {
         }
 
         assert Path != null;
-        FXMLLoader root = new FXMLLoader(Main.class.getResource(Path));
-        Scene scene = new Scene(root.load(),1000, 620);
-        if(Path.equals("log.fxml"))
-            scene.getProperties().put("FXMLLOADER", root);
-        scene.getStylesheets().add(Objects.requireNonNull(Main.class.getResource(cssPath)).toExternalForm());
-        Timeline timeline = new Timeline();
-        KeyFrame keyFrame = new KeyFrame(Duration.millis(500), event -> {
+        if(Path.equals("student_home.fxml")){
+            Timeline timeline = new Timeline();
+            KeyFrame keyFrame = new KeyFrame(Duration.millis(500), event -> {
+                studentHomePage.show();
+                PrimaryStage.hide();
+            });
+            timeline.getKeyFrames().add(keyFrame);
+            timeline.play(); // 播放动画
+        }else {
+            FXMLLoader root = new FXMLLoader(Main.class.getResource(Path));
+            Scene scene = new Scene(root.load(), 1000, 620);
+            if (Path.equals("log.fxml"))
+                scene.getProperties().put("FXMLLOADER", root);
+            scene.getStylesheets().add(Objects.requireNonNull(Main.class.getResource(cssPath)).toExternalForm());
+            Timeline timeline = new Timeline();
+            KeyFrame keyFrame = new KeyFrame(Duration.millis(500), event -> {
                 Stage stage = new Stage();
                 stage.setResizable(false);
                 MFXThemeManager.addOn(scene, Themes.DEFAULT, Themes.LEGACY);
@@ -117,9 +128,10 @@ public class PageController {
                 stage.setScene(scene);
                 stage.show();
                 PrimaryStage.close();
-        });
-        timeline.getKeyFrames().add(keyFrame);
-        timeline.play(); // 播放动画
+            });
+            timeline.getKeyFrames().add(keyFrame);
+            timeline.play(); // 播放动画
+        }
     }
 
     /**
@@ -180,6 +192,7 @@ public class PageController {
         if(Path.equals("student_home.fxml") && GoNum==1){
            // System.out.println((char[]) root.getController());
             StudentHomeController studentHomeController  = root.getController();
+
             FXMLLoader logLoader = (FXMLLoader) Btu.getScene().getProperties().get("FXMLLOADER");
             studentHomeController.loginController = logLoader.getController();
 
@@ -204,6 +217,7 @@ public class PageController {
             stage.setTitle(title);
             stage.setScene(scene);
             stage.show();
+            studentHomePage = stage;
             PrimaryStage.close();
         });
         timeline.getKeyFrames().add(keyFrame);

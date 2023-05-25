@@ -9,11 +9,10 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="620.0" prefWidth="1000.0" stylesheets="@student_courseselection.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.StudentCourseSelectionController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4d79eb" height="51.0" stroke="WHITE" strokeType="INSIDE" width="1000.0" />
-      <Text fill="WHITE" layoutX="412.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Selection" wrappingWidth="176.870361328125">
+      <Text fill="WHITE" layoutX="356.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Selection" wrappingWidth="287.5369873046875">
          <font>
             <Font name="Apple Symbols" size="28.0" />
          </font>

@@ -1,5 +1,6 @@
 package com.study.journey.controller;
 
+import com.study.journey.Main;
 import com.study.journey.entity.Grade;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import io.github.palexdev.materialfx.controls.MFXTableColumn;
@@ -50,8 +51,7 @@ public class StudentGradesController implements Initializable {
     @FXML
     private void changePage() throws IOException {
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(backHome);
+            Main.controller.changePage(backHome);
             temp = false;
         }
     }

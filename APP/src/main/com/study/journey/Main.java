@@ -1,5 +1,6 @@
 package com.study.journey;
 
+import com.study.journey.controller.PageController;
 import io.github.palexdev.materialfx.css.themes.MFXThemeManager;
 import io.github.palexdev.materialfx.css.themes.Themes;
 import javafx.application.Application;
@@ -19,6 +20,7 @@ import java.util.Objects;
  */
 public class Main extends Application {
 
+    public static PageController controller;
     /**
      * The start() method is called when the JavaFX application is launched.
      * It loads the FXML file, creates the scene, and displays the stage.
@@ -26,9 +28,10 @@ public class Main extends Application {
      * @param stage the primary stage for the application.
      * @throws IOException if an I/O error occurs while loading the FXML file.
      */
+
     @Override
     public void start(Stage stage) throws IOException {
-
+        controller = new PageController();
         FXMLLoader logPage = new FXMLLoader(Main.class.getResource("log.fxml"));
         Scene logScene = new Scene(logPage.load(), 1000, 620);
         logScene.getProperties().put("FXMLLOADER", logPage);

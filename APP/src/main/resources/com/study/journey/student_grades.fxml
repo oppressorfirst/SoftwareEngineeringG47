@@ -18,7 +18,7 @@
                   <Image url="@image/back.png" />
                </image>
             </ImageView>
-            <Text id="MyGrades" fill="WHITE" layoutX="447.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Grades" wrappingWidth="105.870361328125" />
+            <Text id="MyGrades" fill="WHITE" layoutX="437.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Grades" wrappingWidth="126.53704833984375" />
             <MFXButton fx:id="backHome" layoutX="7.0" layoutY="5.0" onMouseClicked="#changePage" prefHeight="41.0" prefWidth="44.0" text=" " />
          </children>
       </AnchorPane>
