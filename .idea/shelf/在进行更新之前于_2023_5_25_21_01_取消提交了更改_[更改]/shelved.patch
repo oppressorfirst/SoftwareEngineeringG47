@@ -1,0 +1,488 @@
+Index: .idea/libraries/Maven__org_openjfx_javafx_base_mac_aarch64_19.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_base_mac_aarch64_19.xml b/.idea/libraries/Maven__org_openjfx_javafx_base_mac_aarch64_19.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_base_mac_aarch64_19.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-base:mac-aarch64:19">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19/javafx-base-19-mac-aarch64.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19/javafx-base-19-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19/javafx-base-19-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml b/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.apiguardian:apiguardian-api:1.1.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_graphics_mac_aarch64_19.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_aarch64_19.xml b/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_aarch64_19.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_aarch64_19.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-graphics:mac-aarch64:19">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19/javafx-graphics-19-mac-aarch64.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19/javafx-graphics-19-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19/javafx-graphics-19-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_graphics_19.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_graphics_19.xml b/.idea/libraries/Maven__org_openjfx_javafx_graphics_19.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_graphics_19.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-graphics:19">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19/javafx-graphics-19.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19/javafx-graphics-19-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19/javafx-graphics-19-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml b/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.opentest4j:opentest4j:1.2.0">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__io_github_palexdev_mfxeffects_11_0_5.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__io_github_palexdev_mfxeffects_11_0_5.xml b/.idea/libraries/Maven__io_github_palexdev_mfxeffects_11_0_5.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__io_github_palexdev_mfxeffects_11_0_5.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: io.github.palexdev:mfxeffects:11.0.5">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/mfxeffects/11.0.5/mfxeffects-11.0.5.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/mfxeffects/11.0.5/mfxeffects-11.0.5-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/mfxeffects/11.0.5/mfxeffects-11.0.5-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_controls_19.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_controls_19.xml b/.idea/libraries/Maven__org_openjfx_javafx_controls_19.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_controls_19.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-controls:19">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19/javafx-controls-19.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19/javafx-controls-19-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19/javafx-controls-19-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_1.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_1.xml b/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_1.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_1.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.junit.platform:junit-platform-engine:1.9.1">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__io_github_palexdev_materialfx_11_16_1.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__io_github_palexdev_materialfx_11_16_1.xml b/.idea/libraries/Maven__io_github_palexdev_materialfx_11_16_1.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__io_github_palexdev_materialfx_11_16_1.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: io.github.palexdev:materialfx:11.16.1">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/materialfx/11.16.1/materialfx-11.16.1.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/materialfx/11.16.1/materialfx-11.16.1-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/materialfx/11.16.1/materialfx-11.16.1-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__io_github_palexdev_mfxlocalization_11_1_0.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__io_github_palexdev_mfxlocalization_11_1_0.xml b/.idea/libraries/Maven__io_github_palexdev_mfxlocalization_11_1_0.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__io_github_palexdev_mfxlocalization_11_1_0.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: io.github.palexdev:mfxlocalization:11.1.0">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/mfxlocalization/11.1.0/mfxlocalization-11.1.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/mfxlocalization/11.1.0/mfxlocalization-11.1.0-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/mfxlocalization/11.1.0/mfxlocalization-11.1.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_fxml_19.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_fxml_19.xml b/.idea/libraries/Maven__org_openjfx_javafx_fxml_19.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_fxml_19.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-fxml:19">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/19/javafx-fxml-19.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/19/javafx-fxml-19-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/19/javafx-fxml-19-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_1.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_1.xml b/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_1.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_1.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.junit.jupiter:junit-jupiter-engine:5.9.1">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__io_github_palexdev_virtualizedfx_11_9_1.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__io_github_palexdev_virtualizedfx_11_9_1.xml b/.idea/libraries/Maven__io_github_palexdev_virtualizedfx_11_9_1.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__io_github_palexdev_virtualizedfx_11_9_1.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: io.github.palexdev:virtualizedfx:11.9.1">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/virtualizedfx/11.9.1/virtualizedfx-11.9.1.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/virtualizedfx/11.9.1/virtualizedfx-11.9.1-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/virtualizedfx/11.9.1/virtualizedfx-11.9.1-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_1.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_1.xml b/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_1.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_1.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.junit.platform:junit-platform-commons:1.9.1">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__io_github_palexdev_mfxcore_11_3_0.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__io_github_palexdev_mfxcore_11_3_0.xml b/.idea/libraries/Maven__io_github_palexdev_mfxcore_11_3_0.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__io_github_palexdev_mfxcore_11_3_0.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: io.github.palexdev:mfxcore:11.3.0">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/mfxcore/11.3.0/mfxcore-11.3.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/mfxcore/11.3.0/mfxcore-11.3.0-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/mfxcore/11.3.0/mfxcore-11.3.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_controls_mac_aarch64_19.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_aarch64_19.xml b/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_aarch64_19.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_aarch64_19.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-controls:mac-aarch64:19">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19/javafx-controls-19-mac-aarch64.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19/javafx-controls-19-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19/javafx-controls-19-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_fxml_mac_aarch64_19.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_aarch64_19.xml b/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_aarch64_19.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_aarch64_19.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-fxml:mac-aarch64:19">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/19/javafx-fxml-19-mac-aarch64.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/19/javafx-fxml-19-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/19/javafx-fxml-19-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_kordamp_bootstrapfx_bootstrapfx_core_0_4_0.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_kordamp_bootstrapfx_bootstrapfx_core_0_4_0.xml b/.idea/libraries/Maven__org_kordamp_bootstrapfx_bootstrapfx_core_0_4_0.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_kordamp_bootstrapfx_bootstrapfx_core_0_4_0.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/kordamp/bootstrapfx/bootstrapfx-core/0.4.0/bootstrapfx-core-0.4.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/kordamp/bootstrapfx/bootstrapfx-core/0.4.0/bootstrapfx-core-0.4.0-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/kordamp/bootstrapfx/bootstrapfx-core/0.4.0/bootstrapfx-core-0.4.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_1.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_1.xml b/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_1.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_1.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.junit.jupiter:junit-jupiter-api:5.9.1">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__io_github_palexdev_mfxresources_11_3_2.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__io_github_palexdev_mfxresources_11_3_2.xml b/.idea/libraries/Maven__io_github_palexdev_mfxresources_11_3_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__io_github_palexdev_mfxresources_11_3_2.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: io.github.palexdev:mfxresources:11.3.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/mfxresources/11.3.2/mfxresources-11.3.2.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/mfxresources/11.3.2/mfxresources-11.3.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/io/github/palexdev/mfxresources/11.3.2/mfxresources-11.3.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_base_19.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_base_19.xml b/.idea/libraries/Maven__org_openjfx_javafx_base_19.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_base_19.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ /dev/null	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-base:19">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19/javafx-base-19.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19/javafx-base-19-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19/javafx-base-19-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <module name=\"APP\" />\r\n      </profile>\r\n    </annotationProcessing>\r\n    <bytecodeTargetLevel>\r\n      <module name=\"APP\" target=\"19\" />\r\n    </bytecodeTargetLevel>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ b/.idea/compiler.xml	(date 1685004999680)
+@@ -9,8 +9,5 @@
+         <module name="APP" />
+       </profile>
+     </annotationProcessing>
+-    <bytecodeTargetLevel>
+-      <module name="APP" target="19" />
+-    </bytecodeTargetLevel>
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/APP/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_X\" default=\"true\" project-jdk-name=\"20\" project-jdk-type=\"JavaSDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 69d931f29f7c467845454cf59410fa2ce6d6d3b5)
++++ b/.idea/misc.xml	(date 1685004999670)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
+   <component name="MavenProjectsManager">
+     <option name="originalFiles">
+       <list>
+@@ -7,5 +8,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="20" project-jdk-type="JavaSDK" />
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_20" default="true" project-jdk-name="openjdk-20" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
+ </project>
+\ No newline at end of file
