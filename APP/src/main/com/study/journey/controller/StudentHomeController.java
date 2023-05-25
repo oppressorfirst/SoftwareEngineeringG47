@@ -34,6 +34,7 @@ public class StudentHomeController {
 
     //给别的controller类用来传参
     public String name ;
+    public String ID;
     public Info info;
     public MFXButton quitSystem;
     public MFXButton toAchievement;
@@ -44,7 +45,7 @@ public class StudentHomeController {
 
     @FXML
     public void initialize() {
-        System.out.println(name);
+        System.out.println(ID);
         updateLearningTopicText();
         updatePersonInfoText();
     }
@@ -52,7 +53,12 @@ public class StudentHomeController {
     public void setName(String name) {
         this.name = name;
     }
-        // 其他代码
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    // 其他代码
 
     public void quit() throws IOException {
         if(temp) {
@@ -127,7 +133,6 @@ public class StudentHomeController {
         String csvFilePath = "./APP/src/main/Student_info.csv";
         ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
 
-        String ID = "2020213332"; // 要搜索的特定ID值
         this.info = null;
 
 
@@ -140,25 +145,9 @@ public class StudentHomeController {
         return this.info;
     }
 
-    public Info getInfoFromCsvByName() { // 这个方法根据 name 返回一个特定的学生信息
-
-        String csvFilePath = "./APP/src/main/Student_info.csv";
-        ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
-
-        this.info = null;
-
-
-        for (Info element : infos) {
-            if (element.getName().equals(this.name)) { // 根据特定值进行匹配
-                this.info = element; // 找到匹配的元素
-            }
-        }
-
-        return this.info;
-    }
 
     public void updatePersonInfoText() {
-        this.info = getInfoFromCsvByName();
+        this.info = getInfoFromCsvByID();
         //System.out.println("info: " + info);  // 调试语句
 
         if (info != null) {
