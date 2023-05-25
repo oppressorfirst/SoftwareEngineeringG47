@@ -18,11 +18,16 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.List;
 import java.util.ResourceBundle;
 
 
-
+/**
+ * Title: StudentGradesController.java
+ * Description: The controller class for the Student Grades view.
+ * Copyright  : Copyright (c) 2023/5/25
+ * @author      Jialun Zhang
+ * @version     5.0
+ */
 public class StudentGradesController implements Initializable {
 
     public MFXButton backHome;
@@ -31,6 +36,17 @@ public class StudentGradesController implements Initializable {
     PopUpPageController popUpPageController;
 
     Boolean temp = true; // 防止多次点击
+
+    /**
+     * Changes the page to the home page.
+     * This method is called to navigate to the home page when a specific condition is met.
+     * It checks the value of the boolean variable 'temp' to determine if the page change should occur.
+     * If 'temp' is true, it creates an instance of the PageController class and calls the 'changePage' method,
+     * passing the 'backHome' button as an argument.
+     * After the page change, it sets the value of 'temp' to false to prevent subsequent page changes.
+     *
+     * @throws IOException if an I/O error occurs while changing the page.
+     */
     @FXML
     private void changePage() throws IOException {
         if(temp) {
@@ -40,6 +56,13 @@ public class StudentGradesController implements Initializable {
         }
     }
 
+
+    /**
+     * Parses a 2D array of student data and creates a list of grades.
+     *
+     * @param studentData the 2D array containing the student data.
+     * @return an ArrayList containing the parsed grades.
+     */
     public static ArrayList<Grade> parseGrades(String[][] studentData) {
         ArrayList<Grade> grades = new ArrayList<>();
         for (int i = 0; i < studentData.length; i++) {
@@ -54,7 +77,12 @@ public class StudentGradesController implements Initializable {
         return grades;
     }
 
-
+    /**
+     * Parses a CSV file containing grade data and creates a list of grades.
+     *
+     * @param csvFilePath the path to the CSV file.
+     * @return an ArrayList containing the parsed grades.
+     */
     public static ArrayList<Grade> CSVtoList(String csvFilePath) {
         ArrayList<Grade> grades = new ArrayList<>();
         String csvSplitBy = ",";
@@ -84,7 +112,11 @@ public class StudentGradesController implements Initializable {
 
 
 
-
+    /**
+     * Initializes the controller and sets up the table with grade data.
+     * @param url            the location used to resolve relative paths for the root object, or null if the location is not known.
+     * @param resourceBundle the resources used to localize the root object, or null if the root object was not localized.
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -107,6 +139,10 @@ public class StudentGradesController implements Initializable {
         table.autosizeColumnsOnInitialization();
     }
 
+    /**
+     * Sets up the table by creating the columns, cell factories, and filters.
+     * This method is called during initialization to configure the table for displaying grades.
+     */
     private void setupTable() {
         //represent the creation of the four column in the table
         //Comparator.comparing(Grade::getName)方法用于对这个"Grade"对象进行排序
@@ -136,7 +172,16 @@ public class StudentGradesController implements Initializable {
     }
 
 
-
+    /**
+     * Opens the GPA pop-up page.
+     * This method is called when the user clicks on the "GPA" button to open the GPA pop-up page.
+     * It retrieves the source of the event, creates an instance of the PopUpPageController, and calls the 'makePopUpPage' method,
+     * passing the source button as an argument.
+     * The PopUpPageController is responsible for creating and displaying the GPA pop-up page.
+     *
+     * @param e the action event triggered by the user's click on the "GPA" button.
+     * @throws IOException if an I/O error occurs while creating or displaying the pop-up page.
+     */
     @FXML
     private void openGPA(ActionEvent e) throws IOException {
         System.out.println(e.getSource());

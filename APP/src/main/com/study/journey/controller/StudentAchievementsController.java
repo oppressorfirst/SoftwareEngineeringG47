@@ -1,15 +1,12 @@
 package com.study.journey.controller;
 
 import com.study.journey.entity.Achievement;
-import com.study.journey.entity.Grade;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import io.github.palexdev.materialfx.controls.MFXTableColumn;
 import io.github.palexdev.materialfx.controls.MFXTableView;
 import io.github.palexdev.materialfx.controls.cell.MFXTableRowCell;
-import io.github.palexdev.materialfx.filter.IntegerFilter;
 import io.github.palexdev.materialfx.filter.StringFilter;
 import javafx.fxml.Initializable;
-import javafx.geometry.Pos;
 import javafx.scene.input.MouseEvent;
 
 import java.io.BufferedReader;
@@ -18,14 +15,35 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.Date;
 import java.util.ResourceBundle;
 
+/**
+ * Title: StudentAchievementsController.java
+ * Description: The controller class for the Student Achievements page. This class handles the logic and functionality of the Student Achievements page. It initializes the table view, reads data from a CSV file, sets up the table columns and filters, and provides methods for navigating back to the home page.
+ * Copyright  : Copyright (c) 2023/5/25
+ * @author      Ruizhi Yang, Jialun Zhang
+ * @version     5.0
+ */
 public class StudentAchievementsController implements Initializable {
     public MFXButton backHome;
     Boolean temp = true; // 防止多次点击
-
-    public MFXTableView<Achievement> table; //成就表格，需要构建一下，可以弄个死表格。
+    /**
+     * Represents a table to display achievements.
+     * The `table` variable is an instance of the `MFXTableView` class.
+     * To initialize the table and populate it with data, you can create a sample table by adding dummy data.
+     */
+    public MFXTableView<Achievement> table;
+    /**
+     * Redirects to the home page.
+     * This method is called when the user clicks on a specific element (e.g., a button, link) to navigate to the home page.
+     * It checks the value of the boolean variable 'temp' to determine if the redirection should occur.
+     * If 'temp' is true, it creates an instance of the PageController class and calls the 'changePage' method,
+     * passing the 'backHome' button as an argument.
+     * After the redirection, it sets the value of 'temp' to false to prevent subsequent redirects.
+     *
+     * @param mouseEvent the mouse event triggered by the user's click.
+     * @throws IOException if an I/O error occurs while redirecting to the home page.
+     */
     public void toHome(MouseEvent mouseEvent) throws IOException {
 
             if(temp) {
@@ -35,6 +53,13 @@ public class StudentAchievementsController implements Initializable {
             }
     }
 
+
+    /**
+     * Reads data from a CSV file and converts it into a list of achievements.
+     *
+     * @param csvFilePath the path to the CSV file.
+     * @return an ArrayList containing the achievements read from the CSV file.
+     */
     public static ArrayList<Achievement> CSVtoList2(String csvFilePath) {
         ArrayList<Achievement> achievements = new ArrayList<>();
         String csvSplitBy = ",";
@@ -62,7 +87,12 @@ public class StudentAchievementsController implements Initializable {
     }
 
 
-
+    /**
+     * Initializes the controller.
+     *
+     * @param url the location used to resolve relative paths for the root object, or null if the location is not known.
+     * @param resourceBundle the resources used to localize the root object, or null if the root object was not localized.
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -75,7 +105,12 @@ public class StudentAchievementsController implements Initializable {
         setupTable();
         table.autosizeColumnsOnInitialization();
     }
-    
+
+
+    /**
+     * Sets up the table by creating the columns, cell factories, and filters.
+     * This method is called during initialization to configure the table for displaying achievements.
+     */
     private void setupTable() {
         //represent the creation of the four column in the table
         //Comparator.comparing(Grade::getName)方法用于对这个"Grade"对象进行排序

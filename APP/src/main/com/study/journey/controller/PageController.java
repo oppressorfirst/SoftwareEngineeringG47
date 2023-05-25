@@ -14,15 +14,25 @@ import java.util.Objects;
 
 import io.github.palexdev.materialfx.css.themes.MFXThemeManager;
 
+/**
+ * Title: PageController.java
+ * Description: The PageController class handles the navigation between different pages in the application. It provides methods to change the current page based on the button clicked and user preferences.
+ * Copyright  : Copyright (c) 2023/5/25
+ * @author      Ruizhi Yang, Jialun Zhang
+ * @version     5.0
+ */
 public class PageController {
 
-    /*
-    * This method is used to close the old page.
-    *
-    * @param Btu
-    *
-    * */
-
+    /**
+     * Changes the current page to the specified page.
+     * This method is called when a button is clicked to navigate to a different page.
+     * It retrieves the ID of the button and determines the corresponding page to navigate to.
+     * It loads the FXML file, sets up the scene with the corresponding CSS file,
+     * creates a new stage, and shows the new page.
+     *
+     * @param Btu the button that triggers the page change.
+     * @throws IOException if an I/O error occurs while loading the FXML file or setting up the scene.
+     */
     public void changePage(MFXButton Btu) throws IOException{
         Stage PrimaryStage = (Stage)Btu.getScene().getWindow();
         String Path = null;
@@ -112,20 +122,13 @@ public class PageController {
         timeline.play(); // 播放动画
     }
 
-    /*
-    * This method is used to open the new window
-    *
-    * @param Btu
-    *
-    * */
-
-
-    /*
+    /**
      * This method is particularly used in LoginController.java to make option to access to Administrator home or Student home
-     * @param Btu
-     * @Overload #changePage(MFXButton)
+     * @param Btu the button that triggers the page change.
+     * @param GoNum a specific int to call whether student page or administrator page.
+     * @param userid user ID which is only used for pass the parameter to the next page
+     * &#064;Overload  #changePage(MFXButton)
      */
-
     public void changePage(MFXButton Btu, int GoNum, String userid) throws IOException{
         Stage PrimaryStage = (Stage)Btu.getScene().getWindow();
         String Path = null;

@@ -1,17 +1,10 @@
 package com.study.journey.controller;
 
-import com.study.journey.entity.Course;
-import com.study.journey.entity.Grade;
+
 import com.study.journey.entity.Schedule;
 import io.github.palexdev.materialfx.controls.MFXButton;
-import io.github.palexdev.materialfx.controls.MFXTableColumn;
-import io.github.palexdev.materialfx.controls.MFXTableView;
-import io.github.palexdev.materialfx.controls.cell.MFXTableRowCell;
-import io.github.palexdev.materialfx.filter.IntegerFilter;
-import io.github.palexdev.materialfx.filter.StringFilter;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.fxml.Initializable;
-import javafx.geometry.Pos;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
@@ -21,9 +14,16 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.ResourceBundle;
 
+
+/**
+ * Title: StudentScheduleController.java
+ * Description: The controller class for the Student schedule controller page.
+ * Copyright: Copyright (c) 2023/5/25
+ * @author Ruizhi Yang, Jialun Zhang
+ * @version 5.0
+ */
 public class StudentScheduleController implements Initializable {
     public MFXButton backHome;
     public TableView<Schedule> schedule;
@@ -72,6 +72,14 @@ public class StudentScheduleController implements Initializable {
 
     }
 
+
+
+    /**
+     * Parses a CSV file containing schedule data and creates a list of schedules.
+     * @param csvFilePath the path to the CSV file.
+     * @return an ArrayList containing the parsed schedules.
+     * @throws IOException if an I/O error occurs while reading the file.
+     */
     public static ArrayList<Schedule> CSVtoList3(String csvFilePath) {
         ArrayList<Schedule> schedules = new ArrayList<>();
         String csvSplitBy = ",";

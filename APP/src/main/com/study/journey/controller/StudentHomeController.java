@@ -16,6 +16,14 @@ import java.util.ArrayList;
 import static com.study.journey.controller.AdministratorStudentInformationController.CSVtoList1;
 import static com.study.journey.controller.StudentGradesController.CSVtoList;
 
+
+/**
+ * Title: StudentHomeController.java
+ * Description: The controller class for the Student Home page.
+ * Copyright  : Copyright (c) 2023/5/25
+ * @author Ruizhi Yang, Jialun Zhang
+ * @version 5.0
+ */
 public class StudentHomeController {
 
     public MFXButton toLearning;
@@ -43,6 +51,13 @@ public class StudentHomeController {
     public MFXButton toInformation;
     Boolean temp = true; // 防止多次点击
 
+
+    /**
+     * Initializes the controller after the FXML file has been loaded.
+     * This method is automatically called by the JavaFX framework.
+     * It prints the value of the 'ID' variable and calls the 'updateLearningTopicText()' and 'updatePersonInfoText()' methods.
+     * The 'ID' variable represents the identifier of the controller.
+     */
     @FXML
     public void initialize() {
         System.out.println(ID);
@@ -128,6 +143,12 @@ public class StudentHomeController {
         }
     }
 
+
+    /**
+     * Retrieves a specific student information based on the ID.
+     *
+     * @return the student information object matching the ID, or null if no match is found.
+     */
     public Info getInfoFromCsvByID() { // 这个方法根据 ID 返回一个特定的学生信息
 
         String csvFilePath = "./APP/src/main/Student_info.csv";
@@ -145,7 +166,12 @@ public class StudentHomeController {
         return this.info;
     }
 
-
+    /**
+     * Updates the person information text fields with the student's information.
+     * It retrieves the student's information using the getInfoFromCsvByID() method and updates the relevant text fields.
+     * If the student's information is available, it sets the text fields with the corresponding values.
+     * If the student's information is not available, the text fields remain unchanged.
+     */
     public void updatePersonInfoText() {
         this.info = getInfoFromCsvByID();
         //System.out.println("info: " + info);  // 调试语句
@@ -160,6 +186,12 @@ public class StudentHomeController {
             //System.out.println("info is null");  // 调试语句
         }
     }
+
+    /**
+     * Updates the learning topic text field with the number of grades.
+     * It reads the grades from the "CourseScore.csv" file using the CSVtoList() method and counts the number of grades.
+     * It then sets the learning topic text field with the count of grades.
+     */
     public void updateLearningTopicText() {
         String csvFilePath = "./APP/src/main/CourseScore.csv";
         ArrayList<Grade> grades = CSVtoList(csvFilePath);
@@ -167,6 +199,14 @@ public class StudentHomeController {
         learningTopic.setText(String.format("%d", arrayListSize));
     }
 
+
+    /**
+     * Opens a web page based on the source of the action event.
+     * If the source is the "toEmail" button, it opens the QMUL email login page.
+     * If the source is any other button, it opens the Google Scholar page.
+     *
+     * @param actionEvent the action event triggered by the user's click on a button.
+     */
     public void openWeb(ActionEvent actionEvent) {
         String url;
         if(actionEvent.getSource().equals(toEmail)) {

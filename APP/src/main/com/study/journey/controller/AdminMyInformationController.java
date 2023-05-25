@@ -13,6 +13,13 @@ import java.util.List;
 
 import static com.study.journey.controller.AdministratorStudentInformationController.CSVtoList1;
 
+/**
+ * Title      : AdminMyInformationController.java
+ * Description: This class is used to control the page admin_myinformation.fxml.
+ * Copyright  : Copyright (c) 2023/5/25
+ * @author      Ruizhi Yang, Jialun Zhang
+ * @version     5.0
+ */
 public class AdminMyInformationController {
     public MFXButton toAdministratorHome;
     public MFXButton toScoreManagement;
@@ -31,7 +38,11 @@ public class AdminMyInformationController {
     Boolean temp = true; // 防止多次点击
     private Info info;
 
-    /*Match the right information and return a right administrator element by student's ID*/
+    /**
+     * Description: Match the right information and return a right administrator element by student's ID
+     * @param ID used this student ID to do the search in info arraylist and return a specific student info.
+     */
+
     public void getInfoFromCsvByID(String ID) { // 这个方法根据 ID 返回一个特定的学生信息
 
         String csvFilePath = "./APP/src/main/Adm_info.csv";
@@ -47,7 +58,12 @@ public class AdminMyInformationController {
         }
     }
 
-    /*Update the new PIN into file*/
+
+    /**
+     * Description: Update the new PIN into file
+     * @param accountId the account ID that need to be updated in a new csv file
+     * @param newPin the password that need to be updated in a new csv file
+     */
     public void updateCsvFile(String accountId, String newPin) {
         try {
             String csvFilePath = "./APP/src/main/Adm_info.csv";
@@ -86,6 +102,11 @@ public class AdminMyInformationController {
         }
     }
 
+
+    /**
+     * Description: a submit button controller.
+     * @param mouseEvent the mouse event to be processed
+     */
     public void Submit(MouseEvent mouseEvent) {
         this.getInfoFromCsvByID(this.account.getText());
         String strNowPassword = this.nowPassword.getText();
@@ -110,6 +131,9 @@ public class AdminMyInformationController {
         }
     }
 
+    /**
+     * Description: a function to change page to course page.
+     */
     @FXML
     private void ToCourse() throws IOException {
         if (temp) {
@@ -120,6 +144,9 @@ public class AdminMyInformationController {
 
     }
 
+    /**
+     * Description: a function to change page to score management page.
+     */
     @FXML
     private void ToScoreManagement() throws IOException {
         if (temp) {
@@ -129,6 +156,10 @@ public class AdminMyInformationController {
         }
 
     }
+
+    /**
+     * Description: a function to change page to student information page.
+     */
     @FXML
     private void ToStudentInformation() throws IOException {
         if(temp) {
@@ -138,6 +169,10 @@ public class AdminMyInformationController {
         }
 
     }
+
+    /**
+     * Description: a function to change page to administrator home page.
+     */
     @FXML
     private void ToAdministratorHome() throws IOException {
         if (temp) {
