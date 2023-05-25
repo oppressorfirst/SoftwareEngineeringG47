@@ -12,6 +12,14 @@ import java.util.ArrayList;
 
 import static com.study.journey.controller.AdministratorStudentInformationController.CSVtoList1;
 
+/**
+ * Title: LoginController.java
+ * Description: Controller class for the Login page.
+ * This class handles the functionality of user login and validation.
+ * Copyright  : Copyright (c) 2023/5/25
+ * @author      Ruizhi Yang, Jialun Zhang
+ * @version     5.0
+ */
 public class LoginController {
     public MFXRadioButton AdminRadioBtu;
     public MFXRadioButton StudentRadioBtu;
@@ -29,6 +37,15 @@ public class LoginController {
 
     public Info info;
 
+
+    /**
+     * Retrieves a specific student information based on the ID.
+     * This method reads the student information from the CSV file and stores it in an ArrayList.
+     * It searches for a specific ID value and returns the corresponding student information.
+     *
+     * @return the Info object containing the student information with the specified ID,
+     *         or null if no matching ID is found.
+     */
     public Info getInfoFromCsvByID() { // 这个方法根据 ID 返回一个特定的学生信息
         String csvFilePath = "./APP/src/main/Student_info.csv";
         ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
@@ -47,6 +64,14 @@ public class LoginController {
         return info;
     }
 
+    /**
+     * Retrieves a specific student information based on the Name.
+     * This method reads the student information from the CSV file and stores it in an ArrayList.
+     * It searches for a specific Name value and returns the corresponding student information.
+     *
+     * @return the Info object containing the student information with the specified Name,
+     *         or null if no matching Name is found.
+     */
     public Info getAdmInfoFromCsvByID() { // 这个方法根据 Name 返回一个特定的学生信息
         String csvFilePath = "./APP/src/main/Adm_info.csv";
         ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
@@ -65,7 +90,21 @@ public class LoginController {
         return info;
     }
 
-    // 用于判断用户是否有权利登录 （nicolas Yang）
+
+    /**
+     * Validates the login credentials.
+     * This method validates the provided userID and password against the stored credentials.
+     * It checks if the login is for a student or an admin and performs the corresponding validation.
+     *
+     * @param userID   the user ID provided during login.
+     * @param password the password provided during login.
+     * @return an integer value representing the login status:
+     *         - 1: Successful login for a student.
+     *         - 2: Empty userID or password.
+     *         - 3: Invalid userID or password.
+     *         - 4: No user type selected.
+     *         - 5: Successful login for an admin.
+     */
     private int validLogin(String userID, String password){
 
         // 真正的判断函数
@@ -107,7 +146,15 @@ public class LoginController {
         }
     }
 
-
+    /**
+     * Performs the login operation.
+     * This method is called when the login button is clicked.
+     * It retrieves the user ID and password entered by the user.
+     * It validates the login credentials using the validLogin method.
+     * Depending on the login status, it navigates to the corresponding home page or prints an error message.
+     *
+     * @throws IOException if an I/O error occurs while navigating to the home page.
+     */
     @FXML
     private void Login() throws IOException {
             int goStuNum = 1;
@@ -145,6 +192,11 @@ public class LoginController {
 
     }
 
+    /**
+     * Sets up the radio buttons for exclusive selection.
+     * This method creates a toggle group and assigns the radio buttons to the same group.
+     * It selects the "Student" radio button as the default selection.
+     */
     public void onlyOneChecked() {
         ToggleGroup toggleGroup = new ToggleGroup();    //单选组
         AdminRadioBtu.setToggleGroup(toggleGroup);  //将两个选项放入同一个组

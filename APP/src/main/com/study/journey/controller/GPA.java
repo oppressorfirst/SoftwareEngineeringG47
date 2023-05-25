@@ -14,10 +14,20 @@ import java.util.ResourceBundle;
 
 import static com.study.journey.controller.StudentGradesController.CSVtoList;
 
+/**
+ * Title      : GPA.java
+ * Description: This class is used to control the page GPA.fxml and calculate the GPA.
+ * Copyright  : Copyright (c) 2023/5/25
+ * @author      Ruizhi Yang, Jialun Zhang
+ * @version     5.0
+ */
 public class GPA extends PopUpPageController implements Initializable {
     public Text gpa;
 
-    //北邮算法计算单科Grade Points
+    /**
+     *Description: This is a function to calculate Grade point by BUPT algorithm.
+     * @param grade the grade of one specific course.
+     */
     public double GradePoints(String grade){
         double dblGrade = Double.parseDouble(grade);
         double gradePoints;
@@ -28,7 +38,11 @@ public class GPA extends PopUpPageController implements Initializable {
 
 
 
-
+    /**
+     *Description: This is an override function to initialize the page and calculate the Grade point by BUPT algorithm.
+     * @param url an essential arguments in set up a page in page control class.
+     * @param resourceBundle an essential arguments in set up a page in page control class.
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         String csvFilePath = "./APP/src/main/CourseScore.csv";

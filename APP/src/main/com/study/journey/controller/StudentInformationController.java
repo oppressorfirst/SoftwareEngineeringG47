@@ -1,10 +1,8 @@
 package com.study.journey.controller;
 
-import com.study.journey.entity.Course;
 import com.study.journey.entity.Info;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import io.github.palexdev.materialfx.controls.MFXPasswordField;
-import io.github.palexdev.materialfx.controls.MFXTableView;
 import io.github.palexdev.materialfx.controls.MFXTextField;
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
@@ -12,18 +10,18 @@ import javafx.scene.input.MouseEvent;
 import java.io.*;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Objects;
-import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
-import java.util.ArrayList;
 import java.util.List;
-
 
 import static com.study.journey.controller.AdministratorStudentInformationController.CSVtoList1;
 
+/**
+ * Title: StudentInformationController.java
+ * Description: The controller class for the Student information page.
+ * Copyright  : Copyright (c) 2023/5/25
+ * @author Ruizhi Yang, Jialun Zhang
+ * @version 5.0
+ */
 public class StudentInformationController {
     public MFXButton backHome;
     @FXML
@@ -48,7 +46,12 @@ public class StudentInformationController {
         }
     }
 
-    /*Match the right information and return a right student element by student's ID*/
+
+    /**
+     * Retrieves a specific student information based on the ID.
+     * Match the right information and return a right student element by student's ID
+     * @param ID the ID of the student.
+     */
     public void getInfoFromCsvByID(String ID) { // 这个方法根据 ID 返回一个特定的学生信息
 
         String csvFilePath = "./APP/src/main/Student_info.csv";
@@ -64,8 +67,12 @@ public class StudentInformationController {
         }
     }
 
-    /*Update the new PIN into file*/
 
+    /**
+     * Updates the CSV file with the new PIN for the specified account ID.
+     * @param accountId the account ID for which the PIN should be updated.
+     * @param newPin the new PIN to be set for the account.
+     */
     public void updateCsvFile(String accountId, String newPin) {
         try {
             String csvFilePath = "./APP/src/main/Student_info.csv";
@@ -107,7 +114,10 @@ public class StudentInformationController {
 
 
 
-
+    /**
+     * Submits the password change request.
+     * @param mouseEvent the mouse event triggered by the user's action.
+     */
     @FXML
     public void Submit(MouseEvent mouseEvent) {
         getInfoFromCsvByID(this.account.getText());

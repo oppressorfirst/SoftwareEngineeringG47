@@ -19,6 +19,13 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.ResourceBundle;
 
+/**
+ * Title      : AdministratorStudentInformationController.java
+ * Description: This class is used to control the page admin_studentinformation.fxml.
+ * Copyright  : Copyright (c) 2023/5/25
+ * @author      Ruizhi Yang, Jialun Zhang
+ * @version     5.0
+ */
 public class AdministratorStudentInformationController implements Initializable{
     public MFXButton toAdministratorHome;
     public MFXButton toStudentInformation;
@@ -35,7 +42,10 @@ public class AdministratorStudentInformationController implements Initializable{
 
 
 
-
+    /**
+     *Description: This is the change page function to call a pop-up page.
+     * @param e the event to be processed
+     */
     @FXML
     private void callPopUpPage(ActionEvent e) throws IOException {
             System.out.println(e.getSource());
@@ -44,6 +54,9 @@ public class AdministratorStudentInformationController implements Initializable{
 
     }
 
+    /**
+     *Description: This is the change page function to student information page.
+     */
     @FXML
     private void ToStudentInformation() throws IOException {
         if(temp) {
@@ -54,6 +67,9 @@ public class AdministratorStudentInformationController implements Initializable{
 
     }
 
+    /**
+     *Description: This is the change page function to course page.
+     */
     @FXML
     private void ToCourse() throws IOException {
         if(temp) {
@@ -63,6 +79,10 @@ public class AdministratorStudentInformationController implements Initializable{
         }
 
     }
+
+    /**
+     *Description: This is the change page function to score management page.
+     */
     @FXML
     private void ToScoreManagement() throws IOException {
         if(temp) {
@@ -72,6 +92,10 @@ public class AdministratorStudentInformationController implements Initializable{
         }
 
     }
+
+    /**
+     *Description: This is the change page function to information page.
+     */
     @FXML
     private void ToInformation() throws IOException {
         if(temp) {
@@ -83,6 +107,9 @@ public class AdministratorStudentInformationController implements Initializable{
     }
 
 
+    /**
+     *Description: This is the change page function to administrator home page.
+     */
     @FXML
     private void ToAdministratorHome() throws IOException {
         if(temp) {
@@ -93,7 +120,10 @@ public class AdministratorStudentInformationController implements Initializable{
 
     }
 
-
+    /**
+     *Description: This is the function to read a file in csv format and change it to an info arraylist and return it.
+     * @param csvFilePath the file path of the .csv file
+     */
     public static ArrayList<Info> CSVtoList1(String csvFilePath) {
         ArrayList<Info> infos = new ArrayList<>();
         String csvSplitBy = ",";
@@ -121,7 +151,14 @@ public class AdministratorStudentInformationController implements Initializable{
         return infos;
     }
 
-    /*This method is for adding student in arraylist and write it into the csv file*/
+    /**
+     * Description: This method is for adding student in arraylist and write it into the csv file
+     * @param infos the arraylist which store all the information inside.
+     * @param ID student identification number, which is one of the import attribute inside an element of info arraylist.
+     * @param classID student class ID number, which is one of the import attribute inside an element of info arraylist.
+     * @param name student name which is one of the import attribute inside an element of info arraylist.
+     * @param PIN student password to log in, which is one of the import attribute inside an element of info arraylist.
+     */
     public static void addStudentInfo(ArrayList<Info> infos, String ID, String classID, String name, String PIN) {
         Info infoObj = new Info(ID, classID, name, PIN);
         infos.add(infoObj);
@@ -142,7 +179,13 @@ public class AdministratorStudentInformationController implements Initializable{
             System.out.println("CSV 文件修改失败：" + e.getMessage());
         }
     }
-    /*This method is for removing student in arraylist, just by his/her ID*/
+
+
+    /**
+     *Description: This method is for removing student in arraylist, just by his/her ID
+     * @param infos the arraylist which store all the information inside.
+     * @param ID student identification number. It is used to search in all the elements in info arraylist and do the match.
+     */
     public static void removeStudentInfo(ArrayList<Info> infos, String ID) {
         Info studentToRemove = null;
         for (Info info : infos) {
@@ -192,9 +235,14 @@ public class AdministratorStudentInformationController implements Initializable{
         }
     }
 
-    /*This method is for updating student in arraylist,
-    * first of all we search student by ID,
-    * then update all the attributes inside*/
+    /**
+     * Description: This method is for updating student in arraylist, first of all we search student by ID, then update all the attributes inside.
+     * @param infos the arraylist which store all the information inside.
+     * @param ID the student ID number that you want to update.
+     * @param newClassID the updated class ID
+     * @param newName the updated name
+     * @param newPIN the updated password
+     */
     public static void updateStudentInfo(ArrayList<Info> infos, String ID, String newClassID, String newName, String newPIN) {
         for (Info info : infos) {
             if (info.getID().equals(ID)) {
@@ -248,7 +296,11 @@ public class AdministratorStudentInformationController implements Initializable{
 
 
 
-
+    /**
+     * Description: This method is for setup and initialize this page.
+     * @param url one of the essential arguments
+     * @param resourceBundle one of the essential arguments
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -268,6 +320,10 @@ public class AdministratorStudentInformationController implements Initializable{
         tableInfo.autosizeColumnsOnInitialization();
     }
 
+
+    /**
+     * Description: This method is for setup and initialize the table in this page.
+     */
     private void setupTable() {
         //represent the creation of the four column in the table
         //Comparator.comparing(Grade::getName)方法用于对这个"Grade"对象进行排序
