@@ -47,17 +47,17 @@ public class LoginController {
         return info;
     }
 
-    public Info getAdmInfoFromCsvByName() { // 这个方法根据 Name 返回一个特定的学生信息
+    public Info getAdmInfoFromCsvByID() { // 这个方法根据 Name 返回一个特定的学生信息
         String csvFilePath = "./APP/src/main/Adm_info.csv";
         ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
 
         if(userID!=null)
-            name = userID.getText(); // 要搜索的特定名字值
+            ID = userID.getText(); // 要搜索的特定名字值
         Info info = null;
 
 
         for (Info element : infos) {
-            if (element.getName().equals(ID)) { // 根据特定值进行匹配
+            if (element.getID().equals(ID)) { // 根据特定值进行匹配
                 info = element; // 找到匹配的元素
             }
         }
@@ -87,7 +87,7 @@ public class LoginController {
             }
             //对管理员端的判断
         } else if (AdminRadioBtu.isSelected()) {
-            this.info = getAdmInfoFromCsvByName();
+            this.info = getAdmInfoFromCsvByID();
             // 预定义的用户名和密码,之后删，并换成csv.文件的形式（nicolas）
             String validUsername_adm = this.info.getID();
             String validPassword_adm = this.info.getPIN();
