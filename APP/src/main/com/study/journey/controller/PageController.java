@@ -126,7 +126,7 @@ public class PageController {
      * @Overload #changePage(MFXButton)
      */
 
-    public void changePage(MFXButton Btu, int GoNum, String username) throws IOException{
+    public void changePage(MFXButton Btu, int GoNum, String userid) throws IOException{
         Stage PrimaryStage = (Stage)Btu.getScene().getWindow();
         String Path = null;
         String title;
@@ -180,9 +180,9 @@ public class PageController {
             FXMLLoader logLoader = (FXMLLoader) Btu.getScene().getProperties().get("FXMLLOADER");
             studentHomeController.loginController = logLoader.getController();
 
-            studentHomeController.setName(username);
+            studentHomeController.setID(userid);
             studentHomeController.initialize();
-            System.out.println(studentHomeController.name);
+            System.out.println(studentHomeController.ID);
             //System.out.println(studentHomeController.name);
             //System.out.println(studentHomeController.loginController);
         }
