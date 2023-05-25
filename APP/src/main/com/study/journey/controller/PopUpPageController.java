@@ -60,7 +60,11 @@ public  class PopUpPageController {
             Path = "GPA.fxml";
             cssPath = "GPA.css";
             title = "Current GPA";
-        } else {
+        } else if (button.getId().equals("feedback")) {
+            Path = "feedback.fxml";
+            cssPath = "feedback.css";
+            title = "Feedback";
+        }else {
             title = null;
         }
 

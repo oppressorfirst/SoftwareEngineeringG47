@@ -12,7 +12,7 @@
 <AnchorPane prefHeight="620.0" prefWidth="1000.0" stylesheets="@student_achievements.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.study.journey.controller.StudentAchievementsController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4d79eb" height="51.0" stroke="WHITE" strokeType="INSIDE" width="1000.0" />
-      <Text fill="WHITE" layoutX="408.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Achievement" wrappingWidth="184.870361328125">
+      <Text fill="WHITE" layoutX="361.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Achievement" wrappingWidth="278.20367431640625">
          <font>
             <Font name="Apple Symbols" size="28.0" />
          </font>

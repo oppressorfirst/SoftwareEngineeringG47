@@ -1,5 +1,6 @@
 package com.study.journey.controller;
 
+import com.study.journey.Main;
 import com.study.journey.entity.Info;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import io.github.palexdev.materialfx.controls.MFXPasswordField;
@@ -40,8 +41,7 @@ public class StudentInformationController {
     public void toHome(MouseEvent mouseEvent) throws IOException {
 
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(backHome);
+            Main.controller.changePage(backHome);
             temp = false;
         }
     }

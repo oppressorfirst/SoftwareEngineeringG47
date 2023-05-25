@@ -1,6 +1,7 @@
 package com.study.journey.controller;
 
 
+import com.study.journey.Main;
 import com.study.journey.entity.Schedule;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import javafx.beans.property.SimpleStringProperty;
@@ -40,8 +41,7 @@ public class StudentScheduleController implements Initializable {
     public void toHome(MouseEvent mouseEvent) throws IOException {
 
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(backHome);
+            Main.controller.changePage(backHome);
             temp = false;
         }
     }
@@ -136,7 +136,5 @@ public class StudentScheduleController implements Initializable {
 
         schedule.getColumns().clear(); // 清空表格视图的列
         schedule.getColumns().addAll(MondayColumn,TuesdayColumn, WednesdayColumn, ThursdayColumn, FridayColumn, SaturdayColumn, SundayColumn);
-
-
     }
 }

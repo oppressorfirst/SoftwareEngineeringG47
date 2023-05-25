@@ -1,5 +1,6 @@
 package com.study.journey.controller;
 
+import com.study.journey.Main;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import javafx.fxml.FXML;
 
@@ -31,8 +32,7 @@ public class AdminScoreManagementController {
     @FXML
     private void ToAdminHome() throws IOException {
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(toAdministratorHome);
+            Main.controller.changePage(toAdministratorHome);
             temp = false;
         }
 
@@ -49,8 +49,7 @@ public class AdminScoreManagementController {
     @FXML
     private void ToStudentInformation() throws IOException {
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(toStudentInformation);
+            Main.controller.changePage(toStudentInformation);
             temp = false;
         }
 
@@ -67,8 +66,8 @@ public class AdminScoreManagementController {
     @FXML
     private void ToCourse() throws IOException {
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(toCourse);
+
+            Main.controller.changePage(toCourse);
             temp = false;
         }
 
@@ -85,8 +84,7 @@ public class AdminScoreManagementController {
     @FXML
     private void ToInformation() throws IOException {
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(toAdminInformation);
+            Main.controller.changePage(toAdminInformation);
             temp = false;
         }
 

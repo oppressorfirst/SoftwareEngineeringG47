@@ -1,5 +1,6 @@
 package com.study.journey.controller;
 
+import com.study.journey.Main;
 import com.study.journey.entity.Info;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import io.github.palexdev.materialfx.controls.MFXPasswordField;
@@ -137,8 +138,7 @@ public class AdminMyInformationController {
     @FXML
     private void ToCourse() throws IOException {
         if (temp) {
-            PageController controller = new PageController();
-            controller.changePage(toCourse);
+            Main.controller.changePage(toCourse);
             temp = false;
         }
 
@@ -150,8 +150,7 @@ public class AdminMyInformationController {
     @FXML
     private void ToScoreManagement() throws IOException {
         if (temp) {
-            PageController controller = new PageController();
-            controller.changePage(toScoreManagement);
+            Main.controller.changePage(toScoreManagement);
             temp = false;
         }
 
@@ -163,8 +162,7 @@ public class AdminMyInformationController {
     @FXML
     private void ToStudentInformation() throws IOException {
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(toStudentInformation);
+            Main.controller.changePage(toStudentInformation);
             temp = false;
         }
 
@@ -176,8 +174,7 @@ public class AdminMyInformationController {
     @FXML
     private void ToAdministratorHome() throws IOException {
         if (temp) {
-            PageController controller = new PageController();
-            controller.changePage(toAdministratorHome);
+            Main.controller.changePage(toAdministratorHome);
             temp = false;
         }
     }

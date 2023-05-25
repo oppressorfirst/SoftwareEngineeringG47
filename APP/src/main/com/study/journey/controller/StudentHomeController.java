@@ -1,5 +1,6 @@
 package com.study.journey.controller;
 
+import com.study.journey.Main;
 import com.study.journey.entity.Grade;
 import com.study.journey.entity.Info;
 import io.github.palexdev.materialfx.controls.MFXButton;
@@ -49,7 +50,6 @@ public class StudentHomeController {
     public MFXButton toCourseSelection;
     public MFXButton toClassSchedule;
     public MFXButton toInformation;
-    Boolean temp = true; // 防止多次点击
 
 
     /**
@@ -76,71 +76,55 @@ public class StudentHomeController {
     // 其他代码
 
     public void quit() throws IOException {
-        if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(quitSystem);
-            temp = false;
-            //System.out.println(loginController.name);
-        }
+
+        Main.controller.changePage(quitSystem);
     }
 
     @FXML
     private void toLearning(MouseEvent event) throws IOException {
-        if(temp) {
+
             System.out.println(event.getButton().name());
-            PageController controller = new PageController();
-            controller.changePage(toLearning);
-            temp = false;
+            Main.controller.changePage(toLearning);
+
             System.out.println(loginController.name);
-        }
+
     }
 
     @FXML
     private void toCourseSelection(MouseEvent event) throws IOException {
-        if(temp) {
+
             System.out.println(event.getButton().name());
-            PageController controller = new PageController();
-            controller.changePage(toCourseSelection);
-            temp = false;
-        }
+            Main.controller.changePage(toCourseSelection);
+
     }
 
     @FXML
     private void toClassSchedule(MouseEvent event) throws IOException {
-        if(temp) {
+
             System.out.println(event.getButton().name());
-            PageController controller = new PageController();
-            controller.changePage(toClassSchedule);
-            temp = false;
-        }
+            Main.controller.changePage(toClassSchedule);
+
     }
     @FXML
     private void toInformation(MouseEvent event) throws IOException {
-        if(temp) {
+
             System.out.println(event.getButton().name());
-            PageController controller = new PageController();
-            controller.changePage(toInformation);
-            temp = false;
-        }
+            Main.controller.changePage(toInformation);
+
     }
 
     @FXML
     private void toAchievement(MouseEvent event) throws IOException {
-        if(temp) {
-            //System.out.println(event.getButton().name());
-            PageController controller = new PageController();
-            controller.changePage(toAchievement);
-            temp = false;
-        }
+
+        //System.out.println(event.getButton().name());
+        Main.controller.changePage(toAchievement);
     }
 
     @FXML
     public void toGrades(MouseEvent mouseEvent) throws IOException {
-        if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(toGrades);
-            temp = false;
-        }
+
+            Main.controller.changePage(toGrades);
+
     }
 
 

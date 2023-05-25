@@ -20,7 +20,7 @@ AnchorPane {
 }
 
 #leftpane MFXButton{
-    -fx-font-size: 14px;
+    -fx-font-size: 12px;
     -fx-background-color: #ffffff;
     -fx-font-family: Consolas;
     -fx-text-fill: black;

@@ -1,5 +1,6 @@
 package com.study.journey.controller;
 
+import com.study.journey.Main;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import javafx.fxml.FXML;
 
@@ -19,8 +20,7 @@ public class StudentLearningModuleController {
     @FXML
     private void changePage() throws IOException {
         if(temp) {
-            PageController controller = new PageController();
-            controller.changePage(backHome);
+            Main.controller.changePage(backHome);
             temp = false;
         }
     }

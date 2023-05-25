@@ -1,9 +1,11 @@
 package com.study.journey.controller;
 
+import com.study.journey.Main;
 import com.study.journey.entity.Info;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import io.github.palexdev.materialfx.controls.MFXRadioButton;
 import io.github.palexdev.materialfx.controls.MFXTextField;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ToggleGroup;
 
@@ -36,6 +38,8 @@ public class LoginController {
 
 
     public Info info;
+
+    public PopUpPageController popUpPageController;
 
 
     /**
@@ -166,10 +170,10 @@ public class LoginController {
             password = passWord.getText();
             //this.info = getInfoFromCsvByName();
 
-            PageController controller = new PageController();
+
             switch (validLogin(userid, password)) { // 开始匹配
                 case 1:
-                    controller.changePage(toHome,goStuNum,userid);
+                    Main.controller.changePage(toHome,goStuNum,userid);
                     System.out.println("登录学生端成功");
                     break;
                 case 2:
@@ -183,7 +187,7 @@ public class LoginController {
                     System.out.println("请选择是要adm还是stu");
                     break;
                 case 5:
-                    controller.changePage(toHome,goAdmNum,userid); //之后改
+                    Main.controller.changePage(toHome,goAdmNum,userid); //之后改
                     System.out.println("登录管理员端成功");
                     break;
             }
@@ -202,5 +206,10 @@ public class LoginController {
         AdminRadioBtu.setToggleGroup(toggleGroup);  //将两个选项放入同一个组
         StudentRadioBtu.setToggleGroup(toggleGroup);
         toggleGroup.selectToggle(StudentRadioBtu);  //默认选择
+    }
+
+    public void openFeedback(ActionEvent actionEvent) throws IOException {
+        popUpPageController = new PopUpPageController().makePopUpPage((MFXButton) actionEvent.getSource());
+        System.out.println(popUpPageController);
     }
 }

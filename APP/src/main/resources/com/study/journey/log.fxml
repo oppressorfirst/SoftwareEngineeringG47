@@ -43,8 +43,9 @@
                   <Image url="@image/password.png" />
                </image>
             </ImageView>
-            <MFXRadioButton layoutX="28.0" layoutY="275.0" prefHeight="18.0" prefWidth="76.0" text="Student" fx:id="StudentRadioBtu" onMouseClicked="#onlyOneChecked"/>
-            <MFXRadioButton layoutX="168.0" layoutY="275.0" text="Administrator" fx:id="AdminRadioBtu"/>
+            <MFXRadioButton fx:id="StudentRadioBtu" layoutX="28.0" layoutY="275.0" onMouseClicked="#onlyOneChecked" prefHeight="18.0" prefWidth="76.0" text="Student" />
+            <MFXRadioButton fx:id="AdminRadioBtu" layoutX="168.0" layoutY="275.0" text="Administrator" />
+            <MFXButton onAction="#openFeedback" id="feedback" layoutX="126.0" layoutY="420.0" text="Feedback" />
          </children>
       </AnchorPane>
    </children>
