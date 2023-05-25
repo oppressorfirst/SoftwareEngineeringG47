@@ -78,9 +78,8 @@ public class StudentScheduleController implements Initializable {
      * Parses a CSV file containing schedule data and creates a list of schedules.
      * @param csvFilePath the path to the CSV file.
      * @return an ArrayList containing the parsed schedules.
-     * @throws IOException if an I/O error occurs while reading the file.
      */
-    public static ArrayList<Schedule> CSVtoList3(String csvFilePath) {
+    public static ArrayList<Schedule> CSVtoList3(String csvFilePath){
         ArrayList<Schedule> schedules = new ArrayList<>();
         String csvSplitBy = ",";
         String line;
