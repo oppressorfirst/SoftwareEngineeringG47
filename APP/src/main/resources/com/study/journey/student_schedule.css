@@ -2,3 +2,12 @@
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 }
+
+#time Text{
+    -fx-font-size: 15px;
+}
+
+#shadow{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
