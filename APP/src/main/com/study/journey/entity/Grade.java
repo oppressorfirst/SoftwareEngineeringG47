@@ -1,5 +1,12 @@
 package com.study.journey.entity;
-
+/**
+ * The Grade class represents a grade entry in the system.
+ * It contains information about the course name, status, credit and the grade received by the student.
+ * There are multiple constructors that can be used to create a Grade object depending on the available information.
+ * copyright  : Copyright (c) 2023/5/26
+ * @author Zhongxu Si, Jialun Zhang
+ * @version 5.0
+ */
 public class Grade {
     private final String name;
     private String status;

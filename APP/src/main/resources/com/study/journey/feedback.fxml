@@ -22,7 +22,7 @@
         </rowConstraints>
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Website: " />
-            <Text id="web" fx:id="web" onMouseClicked="#openWeb" strokeType="OUTSIDE" strokeWidth="0.0" text="bupt.edu.cn" GridPane.columnIndex="1">
+            <Text id="web" fx:id="web" onMouseClicked="#openWeb" strokeType="OUTSIDE" strokeWidth="0.0" text="The Github URL" GridPane.columnIndex="1">
                <font>
                   <Font name="Consolas Bold Italic" size="12.0" />
                </font></Text>

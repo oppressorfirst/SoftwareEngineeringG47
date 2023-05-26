@@ -1,5 +1,13 @@
 package com.study.journey.entity;
 
+/**
+ * The Schedule class represents a weekly schedule.
+ * It contains properties representing each day of the week, from Monday to Sunday.
+ * The class provides getters and setters for these properties.
+ * copyright  : Copyright (c) 2023/5/26
+ * @author Ruizhi Yang, Jialun Zhang
+ * @version 5.0
+ */
 public class Schedule {
     private int No;
     private String Monday;
@@ -10,6 +18,17 @@ public class Schedule {
     private String Saturday;
     private String Sunday;
 
+    /**
+     * Construct a new Schedule object with specific details for each day of the week.
+     *
+     * @param Monday The details for Monday.
+     * @param Tuesday The details for Tuesday.
+     * @param Wednesday The details for Wednesday.
+     * @param Thursday The details for Thursday.
+     * @param Friday The details for Friday.
+     * @param Saturday The details for Saturday.
+     * @param Sunday The details for Sunday.
+     */
     public Schedule(String Monday, String Tuesday, String Wednesday, String Thursday, String Friday, String Saturday, String Sunday) {
         setMonday(Monday);
         setTuesday(Tuesday);

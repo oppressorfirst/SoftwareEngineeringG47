@@ -24,6 +24,7 @@ import io.github.palexdev.materialfx.css.themes.MFXThemeManager;
  */
 public class PageController {
 
+    public Stage studentHomePage;
     /**
      * Changes the current page to the specified page.
      * This method is called when a button is clicked to navigate to a different page.
@@ -34,8 +35,6 @@ public class PageController {
      * @param Btu the button that triggers the page change.
      * @throws IOException if an I/O error occurs while loading the FXML file or setting up the scene.
      */
-
-    public Stage studentHomePage;
     public void changePage(MFXButton Btu) throws IOException{
         Stage PrimaryStage = (Stage)Btu.getScene().getWindow();
         String Path = null;
