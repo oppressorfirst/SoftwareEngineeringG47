@@ -2,6 +2,15 @@ package com.study.journey.entity;
 
 import java.util.Date;
 
+/**
+ * The Module class represents an educational module in the system.
+ * It contains properties such as the name of the module, the credit value,
+ * information about the module, and the date associated with the module.
+ * The class also provides getters and setters for these properties.
+ * copyright  : Copyright (c) 2023/5/26
+ * @author Zhongxu Si, Hanyu Wu
+ * @version 5.0
+ */
 public class Module {
     protected  String module_name;
     protected  int module_credit;
@@ -9,8 +18,20 @@ public class Module {
     protected Date time = new Date();
     protected String date;
 
+    /**
+     * Default constructor of Module.
+     */
     public Module() {
     }
+
+    /**
+     * Construct a new Module object with specific details.
+     *
+     * @param name The name of the module.
+     * @param info Information about the module.
+     * @param date The date associated with the module.
+     * @param credit The credit value of the module.
+     */
     public Module(String name, String info, String date, int credit){
         this.date = date;
         this.module_name = name;
