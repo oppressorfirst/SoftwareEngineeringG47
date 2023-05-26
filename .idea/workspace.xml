@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="560f5478-8ae4-42b5-960e-5168e4fd1523" name="更改" comment="test_update" />
+    <list default="true" id="560f5478-8ae4-42b5-960e-5168e4fd1523" name="更改" comment="test_update">
+      <change beforePath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/Login_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/Login_Test.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685111220705</updated>
-      <workItem from="1685111221983" duration="2925000" />
+      <workItem from="1685111221983" duration="2944000" />
     </task>
     <task id="LOCAL-00001" summary="test_update">
       <created>1685114127555</created>
@@ -120,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685114127555</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test_update">
+      <created>1685114155740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685114155740</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
