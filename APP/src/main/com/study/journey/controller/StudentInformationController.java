@@ -132,6 +132,11 @@ public class StudentInformationController {
                     this.info.setPIN(strNewPassword);
                     System.out.println("密码修改成功");
                     updateCsvFile(this.info.getID(), strNewPassword);
+                    try {
+                        toHome(mouseEvent);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
                 } else {
                     System.out.println("两边密码输入不一致");
                 }
