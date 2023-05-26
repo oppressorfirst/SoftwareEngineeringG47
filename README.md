@@ -30,21 +30,21 @@ No need to configure third-party libraries, it can run smoothly on Windows/Mac, 
 
 ### Login screen:
 
-![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/pictures/login.png)
+![image](pictures/login.png)
  
 ### Student Interface:
  
-![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/pictures/student.png)
+![image](pictures/student.png)
  
-![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/pictures/studentcourse.png)
+![image](pictures/studentcourse.png)
  
-![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/pictures/GPA.png)
+![image](pictures/GPA.png)
 
 ### Administrator Interface:
  
- ![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/pictures/admin.png)
+ ![image](pictures/admin.png)
  
- ![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/pictures/adminadd.png)
+ ![image](pictures/adminadd.png)
  
- ![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/pictures/adminedit.png)
+ ![image](pictures/adminedit.png)
  
