@@ -12,7 +12,20 @@ import java.nio.file.Path;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
+/**
+ * Test Class for the LoginController.java
+ * This class tests the validLogin method of LoginController. It creates a temporary CSV file with
+ * user information and checks if the validLogin method works correctly with this data.
+ * The CSV file contains the following data: ID, classID, Name, PIN.
+ * We simulate two cases in the test:
+ *    1) Correct user PIN. In this case, the login should be successful.
+ *    2) Wrong user PIN. In this case, the login should be unsuccessful.
+ * After running the test, the temporary CSV file is deleted.
+ * Copyright  : Copyright (c) 2023/5/26
+ * @author Ziqian Liu
+ * @version 5.0
+ * @since 2023-05-26
+ */
 public class loginControllerTest {
     @TempDir
     Path tempDir;
