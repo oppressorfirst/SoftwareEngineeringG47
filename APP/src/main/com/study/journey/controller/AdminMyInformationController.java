@@ -126,6 +126,11 @@ public class AdminMyInformationController {
                     this.info.setPIN(strNewPassword);
                     System.out.println("密码修改成功");
                     this.updateCsvFile(this.info.getID(),strNewPassword);
+                    try {
+                        ToAdministratorHome();
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
                 }else {
                     System.out.println("两边密码输入不一致");
                 }
