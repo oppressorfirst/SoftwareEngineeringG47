@@ -47,7 +47,7 @@ public class Add extends PopUpPageController{
         if(strID.isEmpty()||strClassID.isEmpty()||strName.isEmpty()||strPin.isEmpty()){
             System.out.println("别输入空的东西！请重新输！");
         }else{
-            addStudentInfo(infos,strID,strClassID,strName,strPin);
+            addStudentInfo(infos,csvFilePath,strID,strClassID,strName,strPin);
             //关闭的代码
             super.closePage((MFXButton) actionEvent.getSource());
         }

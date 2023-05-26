@@ -150,17 +150,18 @@ public class AdministratorStudentInformationController implements Initializable{
     /**
      * Description: This method is for adding student in arraylist and write it into the csv file
      * @param infos the arraylist which store all the information inside.
+     * @param csvFilePath the file path of the csv file that you want to change
      * @param ID student identification number, which is one of the import attribute inside an element of info arraylist.
      * @param classID student class ID number, which is one of the import attribute inside an element of info arraylist.
      * @param name student name which is one of the import attribute inside an element of info arraylist.
      * @param PIN student password to log in, which is one of the import attribute inside an element of info arraylist.
      */
-    public static void addStudentInfo(ArrayList<Info> infos, String ID, String classID, String name, String PIN) {
+    public static void addStudentInfo(ArrayList<Info> infos, String csvFilePath, String ID, String classID, String name, String PIN) {
         Info infoObj = new Info(ID, classID, name, PIN);
         infos.add(infoObj);
 
         try {
-            String csvFilePath = "./APP/src/main/Student_info.csv";
+            //String csvFilePath = "./APP/src/main/Student_info.csv";
 
             // 构建要添加的新行
             String newLine = ID + "," + classID + "," + name + "," + PIN;
@@ -180,9 +181,10 @@ public class AdministratorStudentInformationController implements Initializable{
     /**
      *Description: This method is for removing student in arraylist, just by his/her ID
      * @param infos the arraylist which store all the information inside.
+     * @param csvFilePath the file path of the csv file that you want to change
      * @param ID student identification number. It is used to search in all the elements in info arraylist and do the match.
      */
-    public static void removeStudentInfo(ArrayList<Info> infos, String ID) {
+    public static void removeStudentInfo(ArrayList<Info> infos, String csvFilePath, String ID) {
         Info studentToRemove = null;
         for (Info info : infos) {
             if (info.getID().equals(ID)) {
@@ -195,7 +197,7 @@ public class AdministratorStudentInformationController implements Initializable{
         }
 
         try {
-            String csvFilePath = "./APP/src/main/Student_info.csv";
+            //String csvFilePath = "./APP/src/main/Student_info.csv";
             // 读取原始CSV文件内容
             List<String> lines = new ArrayList<>();
             BufferedReader reader = new BufferedReader(new FileReader(csvFilePath));
@@ -234,12 +236,13 @@ public class AdministratorStudentInformationController implements Initializable{
     /**
      * Description: This method is for updating student in arraylist, first of all we search student by ID, then update all the attributes inside.
      * @param infos the arraylist which store all the information inside.
+     * @param csvFilePath the file path of the csv file that you want to change
      * @param ID the student ID number that you want to update.
      * @param newClassID the updated class ID
      * @param newName the updated name
      * @param newPIN the updated password
      */
-    public static void updateStudentInfo(ArrayList<Info> infos, String ID, String newClassID, String newName, String newPIN) {
+    public static void updateStudentInfo(ArrayList<Info> infos, String csvFilePath, String ID, String newClassID, String newName, String newPIN) {
         for (Info info : infos) {
             if (info.getID().equals(ID)) {
                 info.setClassID(newClassID);
@@ -250,7 +253,7 @@ public class AdministratorStudentInformationController implements Initializable{
         }
 
         try {
-            String csvFilePath = "./APP/src/main/Student_info.csv";
+            //String csvFilePath = "./APP/src/main/Student_info.csv";
             // 读取原始CSV文件内容
             List<String> lines = new ArrayList<>();
             BufferedReader reader = new BufferedReader(new FileReader(csvFilePath));

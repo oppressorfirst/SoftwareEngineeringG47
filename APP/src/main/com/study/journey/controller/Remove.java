@@ -43,7 +43,7 @@ public class Remove extends PopUpPageController{
         if(strID.isEmpty()||strConfirmID.isEmpty()){
             System.out.println("别输入空的东西！请重新输！");
         } else if (strID.equals(strConfirmID)) {
-            removeStudentInfo(infos,strConfirmID);
+            removeStudentInfo(infos,csvFilePath,strConfirmID);
             //关闭的代码
             super.closePage((MFXButton) actionEvent.getSource());
         } else {

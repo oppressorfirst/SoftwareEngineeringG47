@@ -4,44 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d57fc13-d3b5-43ba-a615-771e83b57bca" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_palexdev_materialfx_11_16_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_palexdev_mfxcore_11_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_palexdev_mfxeffects_11_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_palexdev_mfxlocalization_11_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_palexdev_mfxresources_11_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_palexdev_virtualizedfx_11_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_kordamp_bootstrapfx_bootstrapfx_core_0_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_aarch64_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_aarch64_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_aarch64_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_aarch64_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/AddUpdateRemoveTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/InfoTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2023_5_25_21_01____.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_5_25_21_01_取消提交了更改_[更改]/shelved.patch" beforeDir="false" />
+    <list default="true" id="2d57fc13-d3b5-43ba-a615-771e83b57bca" name="变更" comment="Add TDD">
+      <change afterPath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/AdministratorStudentInformationControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/AddUpdateRemoveTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/InfoTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/Student_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/Student_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminMyInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminMyInformationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdministratorStudentInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdministratorStudentInformationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Edit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/GPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/GPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Remove.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Remove.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,7 +67,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="应用程序.APP">
+  <component name="RunManager" selected="JUnit.AdministratorStudentInformationControllerTest">
     <configuration name="APP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.study.journey.APP" />
       <module name="APP" />
@@ -95,7 +81,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddUpdateRemoveTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdministratorStudentInformationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="APP" />
       <extension name="coverage">
         <pattern>
@@ -104,28 +90,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.study.journey.entity" />
-      <option name="MAIN_CLASS_NAME" value="com.study.journey.entity.AddUpdateRemoveTest" />
+      <option name="MAIN_CLASS_NAME" value="com.study.journey.entity.AdministratorStudentInformationControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddUpdateRemoveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="APP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.AddUpdateRemoveTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InfoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdministratorStudentInformationControllerTest.calcGPA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="APP" />
       <extension name="coverage">
         <pattern>
@@ -134,13 +105,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.study.journey.entity" />
-      <option name="MAIN_CLASS_NAME" value="com.study.journey.entity.InfoTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.study.journey.entity.AdministratorStudentInformationControllerTest" />
+      <option name="METHOD_NAME" value="calcGPA" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InfoTests.test_GetInfoFromCsvByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdministratorStudentInformationControllerTest.testGetInfoFromCsvByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="APP" />
       <extension name="coverage">
         <pattern>
@@ -149,8 +121,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.study.journey.entity" />
-      <option name="MAIN_CLASS_NAME" value="com.study.journey.entity.InfoTests" />
-      <option name="METHOD_NAME" value="test_GetInfoFromCsvByName" />
+      <option name="MAIN_CLASS_NAME" value="com.study.journey.entity.AdministratorStudentInformationControllerTest" />
+      <option name="METHOD_NAME" value="testGetInfoFromCsvByID" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdministratorStudentInformationControllerTest.updateStudentInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="APP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.journey.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.journey.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.study.journey.entity.AdministratorStudentInformationControllerTest" />
+      <option name="METHOD_NAME" value="updateStudentInfo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdministratorStudentInformationControllerTest" />
+        <item itemvalue="JUnit.AdministratorStudentInformationControllerTest.testGetInfoFromCsvByID" />
         <item itemvalue="应用程序.APP" />
-        <item itemvalue="JUnit.InfoTests" />
-        <item itemvalue="JUnit.AddUpdateRemoveTest (1)" />
-        <item itemvalue="JUnit.InfoTests.test_GetInfoFromCsvByName" />
-        <item itemvalue="JUnit.AddUpdateRemoveTest" />
+        <item itemvalue="JUnit.AdministratorStudentInformationControllerTest.calcGPA" />
+        <item itemvalue="JUnit.AdministratorStudentInformationControllerTest.updateStudentInfo" />
       </list>
     </recent_temporary>
   </component>
@@ -176,8 +164,16 @@
       <updated>1685033494719</updated>
       <workItem from="1685033495898" duration="288000" />
       <workItem from="1685033791246" duration="303000" />
-      <workItem from="1685034224782" duration="2300000" />
+      <workItem from="1685034224782" duration="10817000" />
     </task>
+    <task id="LOCAL-00001" summary="Add TDD">
+      <created>1685037514092</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685037514092</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,5 +181,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add TDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add TDD" />
   </component>
 </project>

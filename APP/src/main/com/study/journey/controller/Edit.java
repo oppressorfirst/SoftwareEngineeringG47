@@ -48,7 +48,7 @@ public class Edit extends PopUpPageController{
         if(strID.isEmpty()||strNewClassID.isEmpty()||strNewName.isEmpty()||strNewPin.isEmpty()){
             System.out.println("别输入空的东西！请重新输！");
         }else {
-            updateStudentInfo(infos,strID,strNewClassID,strNewName,strNewPin);
+            updateStudentInfo(infos,csvFilePath,strID,strNewClassID,strNewName,strNewPin);
             //关闭
             super.closePage((MFXButton) actionEvent.getSource());
         }

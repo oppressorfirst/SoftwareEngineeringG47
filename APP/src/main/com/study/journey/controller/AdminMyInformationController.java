@@ -39,14 +39,18 @@ public class AdminMyInformationController {
     Boolean temp = true; // 防止多次点击
     private Info info;
 
+    public Info getInfo() {
+        return info;
+    }
+
     /**
      * Description: Match the right information and return a right administrator element by student's ID
      * @param ID used this student ID to do the search in info arraylist and return a specific student info.
+     * @param csvFilePath the file path that you want to search inside.
      */
+    public void getInfoFromCsvByID(String ID,String csvFilePath) { // 这个方法根据 ID 返回一个特定的学生信息
 
-    public void getInfoFromCsvByID(String ID) { // 这个方法根据 ID 返回一个特定的学生信息
-
-        String csvFilePath = "./APP/src/main/Adm_info.csv";
+        //String csvFilePath = "./APP/src/main/Adm_info.csv";
         ArrayList<Info> infos = CSVtoList1(csvFilePath); //直接调用AdministratorInformationController中的静态方法读文件并写入Arraylist中
 
         this.info = null;
@@ -109,7 +113,8 @@ public class AdminMyInformationController {
      * @param mouseEvent the mouse event to be processed
      */
     public void Submit(MouseEvent mouseEvent) {
-        this.getInfoFromCsvByID(this.account.getText());
+        String csvFilePath = "./APP/src/main/Adm_info.csv";
+        this.getInfoFromCsvByID(this.account.getText(),csvFilePath);
         String strNowPassword = this.nowPassword.getText();
         String strNewPassword = this.newPassword.getText();
         String strRepeatPassword = this.repeatPassword.getText();
