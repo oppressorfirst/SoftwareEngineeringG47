@@ -1,6 +1,9 @@
 #table Text{
     -fx-font-size: 20px;
 }
-#header{
+#header {
     -fx-font-size: 40px;
+}
+#web{
+    -fx-font-style: italic;
 }
