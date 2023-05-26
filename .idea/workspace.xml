@@ -11,7 +11,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e7517e8d-b515-4b85-badb-67e03fd7773b" name="变更" comment="almost final modify.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/feedback.css" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/feedback.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/feedback.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/feedback.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coursework Handout.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub Tutorial.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProjectHandout.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group_47_backlog.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype_group47.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManual.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +60,22 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="应用程序.APP">
+  <component name="RunManager" selected="应用程序.Main">
     <configuration name="APP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.study.journey.APP" />
+      <module name="APP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.journey.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.journey.Main" />
       <module name="APP" />
       <extension name="coverage">
         <pattern>
@@ -84,6 +104,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Main" />
         <item itemvalue="应用程序.APP" />
         <item itemvalue="JUnit.AdministratorStudentInformationControllerTest" />
       </list>
@@ -101,6 +122,9 @@
       <workItem from="1685089170188" duration="6427000" />
       <workItem from="1685096374313" duration="947000" />
       <workItem from="1685097989430" duration="2033000" />
+      <workItem from="1685104475519" duration="6000" />
+      <workItem from="1685104771282" duration="195000" />
+      <workItem from="1685113243536" duration="600000" />
     </task>
     <task id="LOCAL-00001" summary="almost final modify.">
       <created>1685088973069</created>
