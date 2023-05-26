@@ -1,9 +1,9 @@
 Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
-0,0,0,0,English,0,0
-0,0,0,0,English,0,0
-Art,0,0,Math,0,0,Chinese
-Art,0,0,Math,0,0,Chinese
-0,0,Chinese,0,0,0,0
-0,0,Chinese,0,0,0,0
-0,0,Chinese,0,0,0,0
-Art,0,0,Math,0,0,English
+-,-,-,-,English,-,-
+-,-,-,-,English,-,-
+Art,-,-,Math,-,-,Chinese
+Art,-,-,Math,-,-,Chinese
+-,-,Chinese,-,-,-,-
+-,-,Chinese,-,-,-,-
+-,-,Chinese,-,-,-,-
+Art,-,-,Math,-,-,English
