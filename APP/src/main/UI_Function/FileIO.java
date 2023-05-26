@@ -71,9 +71,9 @@ public class FileIO {
      *
      * @return A 2D array of strings containing the data from the CSV file.
      */
-    public static String[][] Readfile() {
-        String csvFilePath = "./UI/src/main/UI_Function/CourseScore.csv";
-        File readFile = new File(csvFilePath);
+    public static String[][] Readfile(String file_path) {
+//        String csvFilePath = "./src/main/Student_info.csv";
+        File readFile = new File(file_path);
         String csvSplitBy = ",";
         String[][] student_data;
         // 读取文件总行数

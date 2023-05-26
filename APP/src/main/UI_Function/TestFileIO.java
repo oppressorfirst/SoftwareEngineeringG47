@@ -10,7 +10,7 @@ package UI_Function;
 
 public class TestFileIO {
     public void test_file_io() {
-        String[][] student_info = FileIO.Readfile();
+        String[][] student_info = FileIO.Readfile("./src/main/Student_info.csv");
         String[][] object_info = Search.keyword_search(student_info, "2020213332",
                 FileIO.line_number, FileIO.row_number);
 
