@@ -8,6 +8,7 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -86,6 +87,15 @@ public  class PopUpPageController {
             stage.setResizable(false);
             MFXThemeManager.addOn(scene, Themes.DEFAULT, Themes.LEGACY);
             stage.setTitle(title);
+            Image icon = null;
+            try {
+                icon = new Image(Main.class.getResource("image/icon.png").openStream());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+            // 将图标添加到Stage对象的图标列表中
+            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         });

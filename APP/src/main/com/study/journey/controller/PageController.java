@@ -7,6 +7,7 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import java.io.IOException;
@@ -126,6 +127,15 @@ public class PageController {
                 MFXThemeManager.addOn(scene, Themes.DEFAULT, Themes.LEGACY);
                 stage.setTitle(title);
                 stage.setScene(scene);
+                Image icon = null;
+                try {
+                    icon = new Image(Main.class.getResource("image/icon.png").openStream());
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+
+                // 将图标添加到Stage对象的图标列表中
+                stage.getIcons().add(icon);
                 stage.show();
                 PrimaryStage.close();
             });
@@ -217,6 +227,15 @@ public class PageController {
             stage.setTitle(title);
             stage.setScene(scene);
             stage.show();
+            Image icon = null;
+            try {
+                icon = new Image(Main.class.getResource("image/icon.png").openStream());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+            // 将图标添加到Stage对象的图标列表中
+            stage.getIcons().add(icon);
             studentHomePage = stage;
             PrimaryStage.close();
         });
