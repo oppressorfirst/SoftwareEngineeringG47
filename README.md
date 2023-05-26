@@ -30,19 +30,21 @@ No need to configure third-party libraries, it can run smoothly on Windows/Mac, 
 
 ### Login screen:
 
-![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/UI%20design/1.login.png)
+![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/pictures/login.png)
  
 ### Student Interface:
  
-![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/UI%20design/2.student-home.png)
+![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/pictures/student.png)
  
-![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/UI%20design/3.student-modules.png)
+![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/pictures/studentcourse.png)
  
-![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/UI%20design/4.student-grades.png)
+![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/pictures/GPA.png)
 
 ### Administrator Interface:
  
- ![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/UI%20design/5.administrator-home.png)
+ ![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/pictures/admin.png)
  
- ![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/UI%20design/6.administraor-information.png)
+ ![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/pictures/adminadd.png)
+ 
+ ![image](https://github.com/oppressorfirst/SoftwareEngineeringG47/blob/main/pictures/adminedit.png)
  
