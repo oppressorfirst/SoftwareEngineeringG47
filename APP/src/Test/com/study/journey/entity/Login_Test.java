@@ -2,9 +2,6 @@ package com.study.journey.entity;
 
 import UI_Function.FileIO;
 import org.junit.jupiter.api.Test;
-
-import java.sql.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Login_Test {
