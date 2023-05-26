@@ -14,6 +14,15 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
+
+/**
+ * Title      : AdministratorStudentInformationControllerTest.java
+ * Description: This class is used to control the page AdminCourseManagementController.java.
+ * Copyright  : Copyright (c) 2023/5/25
+ * @author      Ziqian Liu
+ * @version     5.0
+ */
+
 class AdministratorStudentInformationControllerTest {
     @TempDir
     Path tempDir;
