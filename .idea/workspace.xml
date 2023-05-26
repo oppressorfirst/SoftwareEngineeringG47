@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d57fc13-d3b5-43ba-a615-771e83b57bca" name="变更" comment="Add TDD">
-      <change afterPath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/AdministratorStudentInformationControllerTest.java" afterDir="false" />
+    <list default="true" id="2d57fc13-d3b5-43ba-a615-771e83b57bca" name="变更" comment="Add TDD By Liuziqian">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/AddUpdateRemoveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/InfoTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/Student_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/Student_info.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Add.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminMyInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminMyInformationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdministratorStudentInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdministratorStudentInformationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Edit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/GPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/GPA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Remove.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Remove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/AdministratorStudentInformationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/AdministratorStudentInformationControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +24,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -173,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685037514092</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add TDD By Liuziqian">
+      <created>1685072198396</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685072198396</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +183,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add TDD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add TDD" />
+    <MESSAGE value="Add TDD By Liuziqian" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add TDD By Liuziqian" />
   </component>
 </project>
