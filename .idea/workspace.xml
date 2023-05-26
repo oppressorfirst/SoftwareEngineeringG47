@@ -9,23 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7517e8d-b515-4b85-badb-67e03fd7773b" name="变更" comment="almost final modify.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/FeedbackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Achievement.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Achievement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Administrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Grade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/ManageModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/ManageModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/StudentModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/StudentModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/entity/User.java" afterDir="false" />
-    </list>
+    <list default="true" id="e7517e8d-b515-4b85-badb-67e03fd7773b" name="变更" comment="almost final modify supplement some entities javadoc." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685087468294</updated>
       <workItem from="1685087470829" duration="1510000" />
-      <workItem from="1685089170188" duration="2957000" />
+      <workItem from="1685089170188" duration="3355000" />
     </task>
     <task id="LOCAL-00001" summary="almost final modify.">
       <created>1685088973069</created>
@@ -120,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685088973069</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="almost final modify supplement some entities javadoc.">
+      <created>1685092523101</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685092523101</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="almost final modify." />
-    <option name="LAST_COMMIT_MESSAGE" value="almost final modify." />
+    <MESSAGE value="almost final modify supplement some entities javadoc." />
+    <option name="LAST_COMMIT_MESSAGE" value="almost final modify supplement some entities javadoc." />
   </component>
 </project>
