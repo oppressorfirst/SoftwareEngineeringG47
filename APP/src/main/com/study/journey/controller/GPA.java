@@ -36,16 +36,12 @@ public class GPA extends PopUpPageController implements Initializable {
     }
 
 
-
-
     /**
-     *Description: This is an override function to initialize the page and calculate the Grade point by BUPT algorithm.
-     * @param url an essential arguments in set up a page in page control class.
-     * @param resourceBundle an essential arguments in set up a page in page control class.
+     *Description: This is a function that calculate GPA from a .csv file by BUPT algorithm, which calls the function GradePoint(String grade){}.
+     * @param csvFilePath the CourseScore.csv that you want to input and read, which include all the student course grade information.
      */
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        String csvFilePath = "./APP/src/main/CourseScore.csv";
+    public double calcGPA(String csvFilePath){
+        //String csvFilePath = "./APP/src/main/CourseScore.csv";
         ArrayList<Grade> grades = CSVtoList(csvFilePath);
         double sumCredit = 0;//总学分
         double sumGradePointsMultiCredits = 0;
@@ -56,6 +52,22 @@ public class GPA extends PopUpPageController implements Initializable {
             sumGradePointsMultiCredits += GradePoints(grade.getGrade())* grade.getCredit();
         }
         GPA = sumGradePointsMultiCredits/sumCredit;
+
+        return GPA;
+    }
+
+
+
+
+    /**
+     *Description: This is an override function to initialize the page and calculate the GPA by calling the calcGPA(String csvFilePath){}.
+     * @param url an essential arguments in set up a page in page control class.
+     * @param resourceBundle an essential arguments in set up a page in page control class.
+     */
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        String csvFilePath = "./APP/src/main/CourseScore.csv";
+        double GPA = calcGPA(csvFilePath);
         //保留两位小数
         gpa.setText(String.format("%.2f", GPA));
     }

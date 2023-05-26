@@ -4,43 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5eeb13b7-0f29-410e-81ee-9a6454090f2d" name="更改" comment="javadoc update">
-      <change afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/FeedbackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/feedback.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/feedback.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2023_5_25_21_01____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2023_5_25_21_01____.xml" afterDir="false" />
+    <list default="true" id="2d57fc13-d3b5-43ba-a615-771e83b57bca" name="变更" comment="Add TDD">
+      <change afterPath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/AdministratorStudentInformationControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/AddUpdateRemoveTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/Test/com/study/journey/entity/InfoTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/src/main/Student_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/Student_info.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminCourseManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminCourseManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Add.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminMyInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminMyInformationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminScoreManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdminScoreManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdministratorHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdministratorHomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdministratorStudentInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/AdministratorStudentInformationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/PopUpPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/PopUpPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentAchievementsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentAchievementsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentCourseSelectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentCourseSelectionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentGradesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentGradesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentHomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentInformationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentLearningModuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentLearningModuleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/StudentScheduleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/GPA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/GPA.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/add.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/add.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/admin_coursemanagement.css" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/admin_coursemanagement.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/administrator_home.css" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/administrator_home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/administrator_studentinformation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/administrator_studentinformation.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/edit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/edit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/log.css" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/log.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/log.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/log.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/remove.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/remove.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_achievements.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_achievements.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_courseselection.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_courseselection.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_grades.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_grades.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_information.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/resources/com/study/journey/student_information.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Edit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/GPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/GPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Remove.java" beforeDir="false" afterPath="$PROJECT_DIR$/APP/src/main/com/study/journey/controller/Remove.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -69,31 +42,32 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2QHKGu6FlmnuBbuKzEZsVtjSrzd" />
+  <component name="ProjectId" id="2QIG4zTeinM5ew8Phe8laZd3VlE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/18421/IdeaProjects",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="JUnit.AdministratorStudentInformationControllerTest">
     <configuration name="APP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.study.journey.APP" />
       <module name="APP" />
@@ -107,50 +81,107 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AdministratorStudentInformationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="APP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.journey.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.journey.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.study.journey.entity.AdministratorStudentInformationControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdministratorStudentInformationControllerTest.calcGPA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="APP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.journey.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.journey.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.study.journey.entity.AdministratorStudentInformationControllerTest" />
+      <option name="METHOD_NAME" value="calcGPA" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdministratorStudentInformationControllerTest.testGetInfoFromCsvByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="APP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.journey.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.journey.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.study.journey.entity.AdministratorStudentInformationControllerTest" />
+      <option name="METHOD_NAME" value="testGetInfoFromCsvByID" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdministratorStudentInformationControllerTest.updateStudentInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="APP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.journey.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.journey.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.study.journey.entity.AdministratorStudentInformationControllerTest" />
+      <option name="METHOD_NAME" value="updateStudentInfo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdministratorStudentInformationControllerTest" />
+        <item itemvalue="JUnit.AdministratorStudentInformationControllerTest.testGetInfoFromCsvByID" />
         <item itemvalue="应用程序.APP" />
+        <item itemvalue="JUnit.AdministratorStudentInformationControllerTest.calcGPA" />
+        <item itemvalue="JUnit.AdministratorStudentInformationControllerTest.updateStudentInfo" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="5eeb13b7-0f29-410e-81ee-9a6454090f2d" name="更改" comment="" />
-      <created>1685004978110</created>
+      <changelist id="2d57fc13-d3b5-43ba-a615-771e83b57bca" name="变更" comment="" />
+      <created>1685033494719</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1685004978110</updated>
-      <workItem from="1685004979377" duration="688000" />
-      <workItem from="1685007227232" duration="20000" />
-      <workItem from="1685007406491" duration="3000" />
-      <workItem from="1685007475604" duration="3000" />
-      <workItem from="1685019698123" duration="2357000" />
-      <workItem from="1685022073736" duration="82000" />
-      <workItem from="1685027212205" duration="1470000" />
+      <updated>1685033494719</updated>
+      <workItem from="1685033495898" duration="288000" />
+      <workItem from="1685033791246" duration="303000" />
+      <workItem from="1685034224782" duration="10817000" />
     </task>
-    <task id="LOCAL-00001" summary="javadoc update">
-      <created>1685021880322</created>
+    <task id="LOCAL-00001" summary="Add TDD">
+      <created>1685037514092</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1685021880322</updated>
+      <updated>1685037514092</updated>
     </task>
-    <task id="LOCAL-00002" summary="javadoc update">
-      <created>1685021911636</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1685021911636</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="javadoc update" />
-    <option name="LAST_COMMIT_MESSAGE" value="javadoc update" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add TDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add TDD" />
   </component>
 </project>
