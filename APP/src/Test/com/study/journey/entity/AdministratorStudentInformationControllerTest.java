@@ -22,9 +22,6 @@ import static org.junit.jupiter.api.Assertions.fail;
  * @author      Ziqian Liu
  * @version     5.0
  */
-
-
-
 class AdministratorStudentInformationControllerTest {
     @TempDir
     Path tempDir;
@@ -294,6 +291,7 @@ class AdministratorStudentInformationControllerTest {
         Path tempPath = Files.createTempFile("CourseScore", ".csv");
         String tempFilePath = tempPath.toString();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(tempFilePath))) {
+            writer.write("name,status,grade,score\n");
             writer.write("Math,1,5,90\n");
             writer.write("English,-1,4,80\n");
         }
@@ -303,7 +301,7 @@ class AdministratorStudentInformationControllerTest {
         double calculatedGPA = gpa.calcGPA(tempFilePath);
 
         // 计算期望的 GPA
-        double expectedGPA = 3.25;
+        double expectedGPA = 3.5625;
 
         // 比较计算的 GPA 和期望的 GPA
         assertEquals(expectedGPA, calculatedGPA, 0.01);
@@ -322,6 +320,7 @@ class AdministratorStudentInformationControllerTest {
         Path tempPath = Files.createTempFile("Adm_info", ".csv");
         String tempFilePath = tempPath.toString();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(tempFilePath))) {
+            writer.write("ID,classID,Name,PIN\n");
             writer.write("2020213335,2020215110,zhou,1234\n");
             writer.write("2020213336,2020215111,zhuang,123455\n");
         }
