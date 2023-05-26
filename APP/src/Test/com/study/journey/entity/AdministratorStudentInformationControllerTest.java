@@ -14,11 +14,25 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
+
+/**
+ * Title      : AdministratorStudentInformationControllerTest.java
+ * Description: This class is the TDD for the project.
+ * Copyright  : Copyright (c) 2023/5/26
+ * @author      Ziqian Liu
+ * @version     5.0
+ */
+
+
+
 class AdministratorStudentInformationControllerTest {
     @TempDir
     Path tempDir;
 
 
+    /**
+     *Description: This is a function to test the FileIO in StudentGradesController.java
+     */
     @Test
     void CSVtoList() throws IOException {
         // 创建临时文件
@@ -42,6 +56,9 @@ class AdministratorStudentInformationControllerTest {
         assertEquals("A", grade.getGrade());
     }
 
+    /**
+     *Description: This is a function to test the FileIO in AdministratorStudentInformationController.java
+     */
     @Test
     void CSVtoList1() throws IOException {
         // 创建临时文件
@@ -66,6 +83,9 @@ class AdministratorStudentInformationControllerTest {
     }
 
 
+    /**
+     *Description: This is a function to test the FileIO in StudentAchievementsController.java
+     */
     @Test
     void CSVtoList2() throws IOException {
         // 创建临时文件
@@ -90,6 +110,11 @@ class AdministratorStudentInformationControllerTest {
 
 
 
+
+
+    /**
+     *Description: This is a function to test the FileIO in StudentScheduleController.java
+     */
     @Test
     void CSVtoList3() throws IOException {
         // 创建临时文件
@@ -117,7 +142,9 @@ class AdministratorStudentInformationControllerTest {
     }
 
 
-
+    /**
+     *Description: This is a function to test the add student info in AdministratorStudentInformationController.java
+     */
     @Test
     void addStudentInfo() throws IOException {
 
@@ -164,6 +191,9 @@ class AdministratorStudentInformationControllerTest {
         Files.delete(tempPath);
     }
 
+    /**
+     *Description: This is a function to test the remove student info in AdministratorStudentInformationController.java
+     */
     @Test
     void removeStudentInfo() throws IOException {
         // 创建 Info 列表并添加两个 Info 对象
@@ -206,6 +236,9 @@ class AdministratorStudentInformationControllerTest {
     }
 
 
+    /**
+     *Description: This is a function to test the update student info in AdministratorStudentInformationController.java
+     */
     @Test
     void updateStudentInfo() throws IOException {
         // 创建 Info 列表并添加一个 Info 对象
@@ -252,6 +285,9 @@ class AdministratorStudentInformationControllerTest {
     }
 
 
+    /**
+     *Description: This is a function to test the GPA compute in GPA.java
+     */
     @Test
     void calcGPA() throws IOException {
         // 创建临时CSV文件并写入数据
@@ -277,6 +313,9 @@ class AdministratorStudentInformationControllerTest {
     }
 
 
+    /**
+     *Description: This is a function to test FileIO to write info by ID in AdminMyInformationController.java
+     */
     @Test
     void testGetInfoFromCsvByID() throws IOException {
         // 创建临时CSV文件并写入数据
