@@ -6,7 +6,9 @@ import io.github.palexdev.materialfx.css.themes.Themes;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 import java.util.Objects;
 
@@ -39,6 +41,10 @@ public class Main extends Application {
         MFXThemeManager.addOn(logScene, Themes.DEFAULT, Themes.LEGACY);
         logScene.getStylesheets().add(Objects.requireNonNull(Main.class.getResource("log.css")).toExternalForm());
         stage.setTitle("StudyJourney");
+        Image icon = new Image(getClass().getResource("image/icon.png").openStream());
+
+        // 将图标添加到Stage对象的图标列表中
+        stage.getIcons().add(icon);
         stage.setScene(logScene);
         stage.show();
     }
